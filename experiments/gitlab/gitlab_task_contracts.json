@@ -1,0 +1,3762 @@
+{
+  "selection_policy": "All pure GitLab tasks reviewed by intent template and state component.",
+  "task_count": 180,
+  "intent_template_count": 41,
+  "components": [
+    "artifacts",
+    "gitaly",
+    "opensearch",
+    "postgresql",
+    "redis",
+    "sidekiq",
+    "uploads"
+  ],
+  "tasks": [
+    {
+      "task_id": 44,
+      "intent_template_id": 303,
+      "category": "todos_read",
+      "intent": "Check out my todos",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 45,
+      "intent_template_id": 300,
+      "category": "recent_issues_read",
+      "intent": "Check out the most recent open issues",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 46,
+      "intent_template_id": 300,
+      "category": "recent_issues_read",
+      "intent": "Check out the most recent open issues",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 102,
+      "intent_template_id": 349,
+      "category": "issues_by_label_read",
+      "intent": "Display the list of issues in the a11yproject/a11yproject.com repository that have labels related to help needed",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 103,
+      "intent_template_id": 349,
+      "category": "issues_by_label_read",
+      "intent": "Display the list of issues in the kkroening/ffmpeg-python repository that have labels related to questions",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 104,
+      "intent_template_id": 349,
+      "category": "issues_by_label_read",
+      "intent": "Display the list of issues in the keycloak/keycloak repository that have labels related to flaky-test",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 105,
+      "intent_template_id": 349,
+      "category": "issues_by_label_read",
+      "intent": "Display the list of issues in the OpenAPITools/openapi-generator repository that have labels related to OpenAPI Generator CLI",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 106,
+      "intent_template_id": 349,
+      "category": "issues_by_label_read",
+      "intent": "Display the list of issues in the umano/AndroidSlidingUpPanel repository that have labels related to BUG",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 132,
+      "intent_template_id": 322,
+      "category": "repository_commits_read",
+      "intent": "How many commits did kilian make to a11yproject on 3/5/2023?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 133,
+      "intent_template_id": 322,
+      "category": "repository_commits_read",
+      "intent": "How many commits did Eric make to a11yproject on 3/2?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 134,
+      "intent_template_id": 322,
+      "category": "repository_commits_read",
+      "intent": "How many commits did kilian make to a11yproject on 3/1/2023?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 135,
+      "intent_template_id": 322,
+      "category": "repository_commits_read",
+      "intent": "How many commits did Eric and Kilian make to a11yproject on 1/3/2023?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 136,
+      "intent_template_id": 322,
+      "category": "repository_commits_read",
+      "intent": "How many commits did Steven Woodson make to a11y-webring.club on 2/6/2023?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 156,
+      "intent_template_id": 290,
+      "category": "assigned_merge_requests_read",
+      "intent": "Checkout merge requests assigned to me",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 168,
+      "intent_template_id": 289,
+      "category": "contributed_projects_read",
+      "intent": "Tell me the full names of the repositories where I made contributions and they got more than 100 stars?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 169,
+      "intent_template_id": 289,
+      "category": "contributed_projects_read",
+      "intent": "Tell me the full names of the repositories where I made contributions and they got the most stars?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 170,
+      "intent_template_id": 289,
+      "category": "contributed_projects_read",
+      "intent": "Tell me the full names of the repositories where I made contributions and they got the least stars?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 171,
+      "intent_template_id": 289,
+      "category": "contributed_projects_read",
+      "intent": "Tell me the full names of the repositories where I made contributions and they got less than 5 stars?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 172,
+      "intent_template_id": 289,
+      "category": "contributed_projects_read",
+      "intent": "Tell me the full names of the repositories where I made contributions and they got no stars?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 173,
+      "intent_template_id": 310,
+      "category": "latest_updated_issue_read",
+      "intent": "Open my latest updated issue that has keyword \"better\" in its title to check if it is closed",
+      "eval_types": [
+        "string_match",
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 174,
+      "intent_template_id": 310,
+      "category": "latest_updated_issue_read",
+      "intent": "Open my latest updated issue that has keyword \"feature\" in its title to check if it is closed",
+      "eval_types": [
+        "string_match",
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 175,
+      "intent_template_id": 310,
+      "category": "latest_updated_issue_read",
+      "intent": "Open my latest updated issue that has keyword \"dependency\" in its title to check if it is closed",
+      "eval_types": [
+        "string_match",
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 176,
+      "intent_template_id": 310,
+      "category": "latest_updated_issue_read",
+      "intent": "Open my latest updated issue that has keyword \"theme editor\" in its title to check if it is closed",
+      "eval_types": [
+        "string_match",
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 177,
+      "intent_template_id": 310,
+      "category": "latest_updated_issue_read",
+      "intent": "Open my latest updated issue that has keyword \"homepage content\" in its title to check if it is closed",
+      "eval_types": [
+        "string_match",
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 178,
+      "intent_template_id": 500,
+      "category": "latest_created_issue_read",
+      "intent": "Open my latest created issue that has better in its title to check if it is closed",
+      "eval_types": [
+        "string_match",
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 179,
+      "intent_template_id": 500,
+      "category": "latest_created_issue_read",
+      "intent": "Open my latest created issue that has feature in its title to check if it is closed",
+      "eval_types": [
+        "string_match",
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 180,
+      "intent_template_id": 500,
+      "category": "latest_created_issue_read",
+      "intent": "Open my latest created issue that has dependency in its title to check if it is closed",
+      "eval_types": [
+        "string_match",
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 181,
+      "intent_template_id": 500,
+      "category": "latest_created_issue_read",
+      "intent": "Open my latest created issue that has theme editor in its title to check if it is closed",
+      "eval_types": [
+        "string_match",
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 182,
+      "intent_template_id": 500,
+      "category": "latest_created_issue_read",
+      "intent": "Open my latest created issue that has homepage content in its title to check if it is closed",
+      "eval_types": [
+        "string_match",
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 205,
+      "intent_template_id": 320,
+      "category": "user_commits_read",
+      "intent": "How many commits did kilian make on 3/5/2023?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 206,
+      "intent_template_id": 320,
+      "category": "user_commits_read",
+      "intent": "How many commits did Eric make on 3/2?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 207,
+      "intent_template_id": 320,
+      "category": "user_commits_read",
+      "intent": "How many commits did Eric and Kilian make on 1/3/2023 in total?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 258,
+      "intent_template_id": 325,
+      "category": "public_projects_read",
+      "intent": "See all public projects",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 259,
+      "intent_template_id": 312,
+      "category": "rss_token_read",
+      "intent": "Get me my RSS feed token",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 293,
+      "intent_template_id": 329,
+      "category": "clone_command_read",
+      "intent": "Show me the command to clone Super_Awesome_Robot with SSH.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 294,
+      "intent_template_id": 329,
+      "category": "clone_command_read",
+      "intent": "Show me the command to clone ChatGPT with SSH.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 295,
+      "intent_template_id": 329,
+      "category": "clone_command_read",
+      "intent": "Show me the command to clone metaseq with SSH.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 296,
+      "intent_template_id": 329,
+      "category": "clone_command_read",
+      "intent": "Show me the command to clone the best GAN python implementation with SSH.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 297,
+      "intent_template_id": 329,
+      "category": "clone_command_read",
+      "intent": "Show me the command to clone the most stared Covid location tracker with SSH.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 303,
+      "intent_template_id": 321,
+      "category": "period_commits_read",
+      "intent": "How many commits did Kilian make durning 2023?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 304,
+      "intent_template_id": 321,
+      "category": "period_commits_read",
+      "intent": "How many commits did Eric make between Feb 2023 and May 2023?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 305,
+      "intent_template_id": 321,
+      "category": "period_commits_read",
+      "intent": "How many commits did Philip make in 2023/1?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 306,
+      "intent_template_id": 321,
+      "category": "period_commits_read",
+      "intent": "How many commits did Anthony make between 08/2022-09/2022?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 307,
+      "intent_template_id": 321,
+      "category": "period_commits_read",
+      "intent": "How many commits did Nic make in April 2021?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 308,
+      "intent_template_id": 323,
+      "category": "top_contributor_read",
+      "intent": "Tell me who has made the most contributions, in terms of number of commits, to the primer/design project",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 309,
+      "intent_template_id": 323,
+      "category": "top_contributor_read",
+      "intent": "Tell me who has made the most contributions, in terms of number of commits, to the thoughtbot/administrate project",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 310,
+      "intent_template_id": 323,
+      "category": "top_contributor_read",
+      "intent": "Tell me who has made the most contributions, in terms of number of commits, to the AndroidSlidingUpPanel project",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 311,
+      "intent_template_id": 323,
+      "category": "top_contributor_read",
+      "intent": "Tell me who has made the most contributions, in terms of number of commits, to the Pytorch GAN project",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 312,
+      "intent_template_id": 323,
+      "category": "top_contributor_read",
+      "intent": "Tell me who has made the most contributions, in terms of number of commits, to the csvkit project",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 314,
+      "intent_template_id": 324,
+      "category": "top_contributors_read",
+      "intent": "List the name of the top 3 contributors to prime/design repo, ranked by the number of commits?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 315,
+      "intent_template_id": 324,
+      "category": "top_contributors_read",
+      "intent": "List the email address of the top 3 contributors to Pytorch GAN repo, ranked by the number of commits?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 316,
+      "intent_template_id": 324,
+      "category": "top_contributors_read",
+      "intent": "List the name of the top 3 contributors to facebook's guide on building react apps repo, ranked by the number of commits?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 317,
+      "intent_template_id": 324,
+      "category": "top_contributors_read",
+      "intent": "List the name and number of commits of the top 3 contributors to metaseq repo, ranked by the number of commits?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 318,
+      "intent_template_id": 324,
+      "category": "top_contributors_read",
+      "intent": "List the last names of the top 3 contributors to 2019-nCov repo, ranked by the number of commits?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 339,
+      "intent_template_id": 299,
+      "category": "opened_issues_read",
+      "intent": "List all opened issues that report bugs",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 340,
+      "intent_template_id": 299,
+      "category": "opened_issues_read",
+      "intent": "List all opened issues that report bugs",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 341,
+      "intent_template_id": 299,
+      "category": "opened_issues_read",
+      "intent": "List all opened issues requesting new features",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 342,
+      "intent_template_id": 299,
+      "category": "opened_issues_read",
+      "intent": "List all opened issues that ask about OPT model related questions",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 343,
+      "intent_template_id": 299,
+      "category": "opened_issues_read",
+      "intent": "List all opened issues that don't have any labels",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 349,
+      "intent_template_id": 298,
+      "category": "project_members_read",
+      "intent": "Who else have access to my repo gimmiethat.space, show me their usernames",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 350,
+      "intent_template_id": 298,
+      "category": "project_members_read",
+      "intent": "Who else have access to my repo prism-theme, show me their usernames",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 357,
+      "intent_template_id": 291,
+      "category": "review_merge_requests_read",
+      "intent": "Checkout merge requests requiring my review",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 389,
+      "intent_template_id": 348,
+      "category": "merge_request_comment",
+      "intent": "Post \"Thanks, working on reviews\" for the merge request related to octovisuals page in primer/design project",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 390,
+      "intent_template_id": 348,
+      "category": "merge_request_comment",
+      "intent": "Post \"lgtm\" for the merge request related to semantic HTML post in a11yproject/a11yproject.com project",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 391,
+      "intent_template_id": 348,
+      "category": "merge_request_comment",
+      "intent": "Post \"close because non reproducible\" for the merge request related to focus edge cases in a11yproject/a11yproject.com project",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 392,
+      "intent_template_id": 348,
+      "category": "merge_request_comment",
+      "intent": "Post \"Good idea\" for the merge request related to color ulitity in a11yproject.com project",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 393,
+      "intent_template_id": 348,
+      "category": "merge_request_comment",
+      "intent": "Post \"lgtm\" for the merge request related to fixing the broken links in byteblaze/empathy-prompts project",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 394,
+      "intent_template_id": 352,
+      "category": "project_fork",
+      "intent": "Fork 2019-nCov.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 395,
+      "intent_template_id": 352,
+      "category": "project_fork",
+      "intent": "Fork the Pytorch GAN repo with most stars.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 396,
+      "intent_template_id": 352,
+      "category": "project_fork",
+      "intent": "Fork ChatGPT.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 397,
+      "intent_template_id": 352,
+      "category": "project_fork",
+      "intent": "Fork MetaSeq.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 398,
+      "intent_template_id": 352,
+      "category": "project_fork",
+      "intent": "Fork all source repos from Akilesh Kannan",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 411,
+      "intent_template_id": 355,
+      "category": "repository_license_commit",
+      "intent": "Make the LICENSE of byteblaze/cloud-to-butt to MIT license.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 412,
+      "intent_template_id": 355,
+      "category": "repository_license_commit",
+      "intent": "Make the LICENSE of byteblaze/accessible-html-content-patterns to Apache License",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 413,
+      "intent_template_id": 355,
+      "category": "repository_license_commit",
+      "intent": "Make the LICENSE of byteblaze/a11y-syntax-highlighting to one that mandates all copies and derivative works to be under the same license",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 414,
+      "intent_template_id": 355,
+      "category": "repository_license_commit",
+      "intent": "Make the LICENSE of byteblaze/dotfiles to MIT license.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 415,
+      "intent_template_id": 360,
+      "category": "merge_request_reply",
+      "intent": "Go to the merge request on verification functions I have to review, find if the author of the merge request responded at the end, and reply \"Thank you\" if he did. Otherwise remind him with a simple @.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 416,
+      "intent_template_id": 360,
+      "category": "merge_request_reply",
+      "intent": "Go to the merge request on wcag I have to review, find if the author of the merge request responded at the end, and reply \"Thank you\" if he did. Otherwise remind him with a simple @.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 417,
+      "intent_template_id": 360,
+      "category": "merge_request_reply",
+      "intent": "Go to the merge request on 404 link I have to review, find if the author of the merge request responded at the end, and reply \"Thank you\" if he did. Otherwise remind him with a simple @.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 418,
+      "intent_template_id": 361,
+      "category": "user_status",
+      "intent": "Set my gitlab status as Busy.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 419,
+      "intent_template_id": 361,
+      "category": "user_status",
+      "intent": "Set my gitlab status as Enjoying life.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 420,
+      "intent_template_id": 361,
+      "category": "user_status",
+      "intent": "Set my gitlab status as Playing Badminton.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 421,
+      "intent_template_id": 361,
+      "category": "user_status",
+      "intent": "Set my gitlab status as Resting due to leg injury.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 422,
+      "intent_template_id": 361,
+      "category": "user_status",
+      "intent": "Set my gitlab status as Out of Office.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 441,
+      "intent_template_id": 308,
+      "category": "project_title",
+      "intent": "Update the project site's title to \"GIVE ME SPACE\"",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 442,
+      "intent_template_id": 308,
+      "category": "project_title",
+      "intent": "Update the project site's title to \"Welcome to my site\"",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 443,
+      "intent_template_id": 308,
+      "category": "project_title",
+      "intent": "Update the project site's title to \"Not an interesting site\"",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 444,
+      "intent_template_id": 308,
+      "category": "project_title",
+      "intent": "Update the project site's title to \"Title Wanted\"",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 445,
+      "intent_template_id": 308,
+      "category": "project_title",
+      "intent": "Update the project site's title to \"Hello\"",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 446,
+      "intent_template_id": 999,
+      "category": "issue_assignee",
+      "intent": "Assign the issue regarding 404 in a11yproject to Roshanjossey.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 447,
+      "intent_template_id": 999,
+      "category": "issue_assignee",
+      "intent": "Assign the issue regarding linking to an accessibility statement in a11y-webring.club to Rohan.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 448,
+      "intent_template_id": 331,
+      "category": "profile_homepage",
+      "intent": "set the homepage URL on my GitLab profile to https://egg.tart.com",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 449,
+      "intent_template_id": 331,
+      "category": "profile_homepage",
+      "intent": "set the homepage URL on my GitLab profile to https://helloworld.xyz",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 450,
+      "intent_template_id": 331,
+      "category": "profile_homepage",
+      "intent": "set the homepage URL on my GitLab profile to a11yproject.contributor.me",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 451,
+      "intent_template_id": 331,
+      "category": "profile_homepage",
+      "intent": "set the homepage URL on my GitLab profile to www.byteblaze.com",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 452,
+      "intent_template_id": 331,
+      "category": "profile_homepage",
+      "intent": "set the homepage URL on my GitLab profile to byteblaze.github.io",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 475,
+      "intent_template_id": 292,
+      "category": "empty_project",
+      "intent": "Set up a new, empty repository with the name chatgpt_plugin?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 476,
+      "intent_template_id": 292,
+      "category": "empty_project",
+      "intent": "Set up a new, empty repository with the name awesome_llm_reading?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 477,
+      "intent_template_id": 292,
+      "category": "empty_project",
+      "intent": "Set up a new, empty repository with the name awesome_program_aided_reasoning?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 478,
+      "intent_template_id": 292,
+      "category": "empty_project",
+      "intent": "Set up a new, empty repository with the name webagent?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 479,
+      "intent_template_id": 292,
+      "category": "empty_project",
+      "intent": "Set up a new, empty repository with the name awesome_webagent?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 480,
+      "intent_template_id": 293,
+      "category": "project_collaborator",
+      "intent": "Invite yjlou as collaborator to solarized-prism-theme",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 481,
+      "intent_template_id": 294,
+      "category": "project_guest",
+      "intent": "Abishek wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 482,
+      "intent_template_id": 294,
+      "category": "project_guest",
+      "intent": "yjlou wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 483,
+      "intent_template_id": 294,
+      "category": "project_guest",
+      "intent": "Koushik wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 484,
+      "intent_template_id": 294,
+      "category": "project_guest",
+      "intent": "Jakub Klinkovsk\u00fd wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 485,
+      "intent_template_id": 294,
+      "category": "project_guest",
+      "intent": "Vinta wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 522,
+      "intent_template_id": 352,
+      "category": "project_fork",
+      "intent": "Fork all repos from facebook.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 523,
+      "intent_template_id": 354,
+      "category": "project_star",
+      "intent": "Star the top five most stared repos in Gitlab",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 524,
+      "intent_template_id": 354,
+      "category": "project_star",
+      "intent": "Star the top eight most stared repos in Gitlab",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 525,
+      "intent_template_id": 354,
+      "category": "project_star",
+      "intent": "Star the top four most stared repos in Gitlab",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 526,
+      "intent_template_id": 354,
+      "category": "project_star",
+      "intent": "Star the top three most stared repos in Gitlab",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 527,
+      "intent_template_id": 354,
+      "category": "project_star",
+      "intent": "Star the top one most stared repos in Gitlab",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 533,
+      "intent_template_id": 330,
+      "category": "user_follow",
+      "intent": "Follow ['convexegg', 'yjlou'] on Gitlab",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 534,
+      "intent_template_id": 330,
+      "category": "user_follow",
+      "intent": "Follow ['Jakub Klinkovsk\u00fd', 'Koushik', 'Vinta Chen'] on Gitlab",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 535,
+      "intent_template_id": 330,
+      "category": "user_follow",
+      "intent": "Follow ['Jakub K', 'ghost', 'Beno\u00eet Blanchon'] on Gitlab",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 536,
+      "intent_template_id": 330,
+      "category": "user_follow",
+      "intent": "Follow ['ghost', 'R1kk3r', 'Abishek'] on Gitlab",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 537,
+      "intent_template_id": 330,
+      "category": "user_follow",
+      "intent": "Follow ['Jakub Klinkovsk', 'convexegg', 'Vinta Chen', 'yjlou', 'Abishek S'] on Gitlab",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 567,
+      "intent_template_id": 293,
+      "category": "project_collaborator",
+      "intent": "Invite Jakub Klinkovsk\u00fd and Beno\u00eet Blanchon as collaborator to gimmiethat.space repo",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 568,
+      "intent_template_id": 293,
+      "category": "project_collaborator",
+      "intent": "Invite Abishek and Vinta as collaborator to a11yproject.com repo",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 569,
+      "intent_template_id": 293,
+      "category": "project_collaborator",
+      "intent": "Invite Beno\u00eet and Abishek as collaborator to my HTML5 markup extention repo",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 570,
+      "intent_template_id": 293,
+      "category": "project_collaborator",
+      "intent": "Invite Jakub K, Alex Dills, Alex Hutnik and Beno\u00eet Blanchon as collaborator to my time tracking tool project repo",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 576,
+      "intent_template_id": 351,
+      "category": "project_members",
+      "intent": "Add the following users to repo a11y-webring.club as developer: ['abisubramanya27', 'lahwaacz']",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 577,
+      "intent_template_id": 351,
+      "category": "project_members",
+      "intent": "Add the following users to my GitHub timeline item management extension as maintainer: ['abisubramanya27', 'lahwaacz']",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 578,
+      "intent_template_id": 351,
+      "category": "project_members",
+      "intent": "Add the following users to repo millennials-to-snake-people as reporter: ['yjlou', 'a11yproject']",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 579,
+      "intent_template_id": 351,
+      "category": "project_members",
+      "intent": "Add the following users to my time tracking tool as guest: ['yjlou']",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 590,
+      "intent_template_id": 339,
+      "category": "milestone_create",
+      "intent": "Create a milestone for the upcoming event of product launch starting on 1/16/2023 and ending on 1/30/2023",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 591,
+      "intent_template_id": 339,
+      "category": "milestone_create",
+      "intent": "Create a milestone for the upcoming practice of collective code review starting on 1/16/2023 and ending on in 20 days",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 592,
+      "intent_template_id": 339,
+      "category": "milestone_create",
+      "intent": "Create a milestone for the upcoming task of cleaning sensitive information starting on 2/16/2023 and ending on in 20 days",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 593,
+      "intent_template_id": 339,
+      "category": "milestone_create",
+      "intent": "Create a milestone for the upcoming task of merging all branches to main starting on March 15, 2044 and ending on March 30, 2044",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 594,
+      "intent_template_id": 339,
+      "category": "milestone_create",
+      "intent": "Create a milestone for the upcoming task of adding a new branch for zsh comprehensive support starting on 5/1/2044 and ending on in 20 days",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 658,
+      "intent_template_id": 327,
+      "category": "assigned_issue_create",
+      "intent": "Create an issue in a11yproject repo with title \"401 bad gateway\". Assign the issue to Roshanjossey. Set due date to be the end of 2030",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 659,
+      "intent_template_id": 327,
+      "category": "assigned_issue_create",
+      "intent": "Create an issue in empathy-prompts repo with title \"Integrating LLMs for better prompts\". Assign the issue to Roshanjossey. Set due date to be the beginning of Q2 2033",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 660,
+      "intent_template_id": 327,
+      "category": "assigned_issue_create",
+      "intent": "Create an issue in dotfiles repo with title \"add support for oh-my-zsh\". Assign the issue to Abishek. Set due date to be July 18 2033",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 661,
+      "intent_template_id": 328,
+      "category": "issue_create",
+      "intent": "Open an issue to report the issue of connection refused in ChatGPT.",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 662,
+      "intent_template_id": 328,
+      "category": "issue_create",
+      "intent": "Open an issue to report experiencing \"OSError: [Errno 98] Address already in use\" during executions in aem-hacker.",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 663,
+      "intent_template_id": 328,
+      "category": "issue_create",
+      "intent": "Open an issue to ask their plan on supporting Llama and other llama family models in metaseq.",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 664,
+      "intent_template_id": 328,
+      "category": "issue_create",
+      "intent": "Open an issue to ask their plans on adding Python 3.11 related resources in awesome-python.",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 665,
+      "intent_template_id": 328,
+      "category": "issue_create",
+      "intent": "Open an issue to request adding support for MT theme editor in a11y-syntax-highlighting.",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 666,
+      "intent_template_id": 335,
+      "category": "merge_request_create",
+      "intent": "Submit a request to merge dialog-component branch into dialog branch, assign Carol as the reviewer",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 667,
+      "intent_template_id": 335,
+      "category": "merge_request_create",
+      "intent": "Submit a merge request for dialog-component branch to be merged into bump-doctocat branch, assign primer as the reviewer",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 668,
+      "intent_template_id": 335,
+      "category": "merge_request_create",
+      "intent": "Submit a merge request for a11yproject.com/redesign branch to be merged into master branch, assign Justin Armstrong as the reviewer",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 669,
+      "intent_template_id": 337,
+      "category": "discussion_issue_create",
+      "intent": "Open a new issue to discuss the implementation of dark mode",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 670,
+      "intent_template_id": 337,
+      "category": "discussion_issue_create",
+      "intent": "Open a new issue to discuss the implementation of default plugins for .zsh",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 736,
+      "intent_template_id": 355,
+      "category": "repository_license_commit",
+      "intent": "Make the LICENSE of gimmiethat.space and dotfiles to MIT license.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 742,
+      "intent_template_id": 332,
+      "category": "project_create",
+      "intent": "Create a new private project \"planner\" and add Abishek, Vinta as members",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 743,
+      "intent_template_id": 332,
+      "category": "project_create",
+      "intent": "Create a new public project \"web_arena\" and add Abishek, Vinta as members",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 744,
+      "intent_template_id": 332,
+      "category": "project_create",
+      "intent": "Create a new public project \"AutoAGI\" and add primer as members",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 745,
+      "intent_template_id": 332,
+      "category": "project_create",
+      "intent": "Create a new public project \"awesome-llms\" and add primer, convexegg, abishek as members",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 746,
+      "intent_template_id": 332,
+      "category": "project_create",
+      "intent": "Create a new private project \"llm_bulk_inference\" and add primer, convexegg, abishek as members",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 747,
+      "intent_template_id": 2100,
+      "category": "template_project_create",
+      "intent": "Start a private project awesome_web_agents with blank template and add Abishek, Vinta as members",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 748,
+      "intent_template_id": 2100,
+      "category": "template_project_create",
+      "intent": "Start a private project web_agent_android_xl with Android template and add primer, convexegg, abishek as members",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 749,
+      "intent_template_id": 2100,
+      "category": "template_project_create",
+      "intent": "Start a private project project_site with NodeJS template and add primer, convexegg, vinta as members",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 750,
+      "intent_template_id": 2100,
+      "category": "template_project_create",
+      "intent": "Start a private project agi_index with HTML template and add Vinta Chen as members",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 751,
+      "intent_template_id": 2100,
+      "category": "template_project_create",
+      "intent": "Start a private project AGISite with JEKYLL template and add Rohan and Vinta as members",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 752,
+      "intent_template_id": 332,
+      "category": "project_create",
+      "intent": "Create a private blank repository called \"web_agent\" using the right template to speed up development.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 753,
+      "intent_template_id": 332,
+      "category": "project_create",
+      "intent": "Create a private Android repository called \"web_agent_android_xs\" using the right template to speed up development.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 754,
+      "intent_template_id": 332,
+      "category": "project_create",
+      "intent": "Create a private NodeJS repository called \"web_agent_nodejs\" using the right template to speed up development.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 755,
+      "intent_template_id": 332,
+      "category": "project_create",
+      "intent": "Create a private HTML repository called \"web_agent_index\" using the right template to speed up development.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 756,
+      "intent_template_id": 332,
+      "category": "project_create",
+      "intent": "Create a private JEKYLL repository called \"11711_gitlab\" using the right template to speed up development.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "gitaly",
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 783,
+      "intent_template_id": 351,
+      "category": "project_members",
+      "intent": "Add the following users to repo kkroening/ffmpeg-python as maintainer: ['yjlou', 'a11yproject']",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 784,
+      "intent_template_id": 316,
+      "category": "branch_contributor_read",
+      "intent": "Tell me the email address of the contributor who has the most commits to branch main",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 785,
+      "intent_template_id": 316,
+      "category": "branch_contributor_read",
+      "intent": "Tell me the email address of the contributor who has the most commits to branch gh-page",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 786,
+      "intent_template_id": 316,
+      "category": "branch_contributor_read",
+      "intent": "Tell me the number of commits of the contributor who has the most commits to branch main",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 787,
+      "intent_template_id": 316,
+      "category": "branch_contributor_read",
+      "intent": "Tell me the number of followers of the contributor who has the most commits to branch main",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 788,
+      "intent_template_id": 316,
+      "category": "branch_contributor_read",
+      "intent": "Tell me the full name, gitlab account name, location and email address of the contributor who has the most commits to branch php52",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "postgresql",
+        "redis",
+        "sidekiq",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 789,
+      "intent_template_id": 328,
+      "category": "issue_create",
+      "intent": "Create an issue asking about do they have any plan on supporting Webagent in the next quater in huggingface dataset.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 799,
+      "intent_template_id": 600,
+      "category": "group_create",
+      "intent": "create a new group \"n-lab\" with members patou, egpast, westurner, jontutcher",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 800,
+      "intent_template_id": 600,
+      "category": "group_create",
+      "intent": "create a new group \"x-lab\" with members JonasVautherin, dilipchandima, dawiss1337, bmyun, DCMJY",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 801,
+      "intent_template_id": 600,
+      "category": "group_create",
+      "intent": "create a new group \"crew\" with members ASWATFZLLC, patrickhlauke, westurner, linkmatrix",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 802,
+      "intent_template_id": 600,
+      "category": "group_create",
+      "intent": "create a new group \"coding_friends\" with members qhduan, Agnes-U",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 803,
+      "intent_template_id": 600,
+      "category": "group_create",
+      "intent": "create a new group \"webagent\" with members pandey2000, sayakpaul, sayakpaul",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 804,
+      "intent_template_id": 999,
+      "category": "issue_assignee",
+      "intent": "Assign the issue regarding flash alerts to myself and primer.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 805,
+      "intent_template_id": 335,
+      "category": "merge_request_create",
+      "intent": "Submit a merge request for the branch that implements the support of template strings to be merged into master branch, assign myself and Roshan as the reviewer",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 806,
+      "intent_template_id": 335,
+      "category": "merge_request_create",
+      "intent": "Submit a merge request for a11yproject.com/redesign branch to be merged into markdown-figure-block branch, assign myself as the reviewer",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 807,
+      "intent_template_id": 335,
+      "category": "merge_request_create",
+      "intent": "Submit a merge request for build time debug branch to be merged into main branch, assign myself as the reviewer",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 808,
+      "intent_template_id": 327,
+      "category": "assigned_issue_create",
+      "intent": "Create an issue in cloud-to-butt repo with title \"Let's keep the project alive\". Assign the issue to myself. Set due date to be the end of Q1 2033",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 809,
+      "intent_template_id": 327,
+      "category": "assigned_issue_create",
+      "intent": "Create an issue in a11yproject repo with title \"404 for many URLs\". Assign the issue to myself. Set due date to be 2030-1-3",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 810,
+      "intent_template_id": 999,
+      "category": "issue_assignee",
+      "intent": "Assign the issue regarding flash alert in primer design guide repo to myself.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 811,
+      "intent_template_id": 999,
+      "category": "issue_assignee",
+      "intent": "Assign the issue regarding 404 in a11yproject to myself.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "postgresql",
+        "redis",
+        "sidekiq"
+      ],
+      "exclusions": [
+        "artifacts",
+        "gitaly",
+        "opensearch",
+        "uploads"
+      ],
+      "review_status": "intent_template_reviewed"
+    }
+  ]
+}

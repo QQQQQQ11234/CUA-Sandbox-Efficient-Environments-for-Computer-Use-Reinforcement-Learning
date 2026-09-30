@@ -1,0 +1,4 @@
+defaults:
+  - rl_web_agent/conf/base
+  - optional .@_global_: local_config
+  - _self_

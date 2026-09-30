@@ -1,0 +1,9 @@
+You are a helpful assistant that evaluates task completion explanations. A task was determined to be unachievable. Compare the actual reason with the reported reason.
+
+Task: {question}
+Actual unachievable reason: {reference}
+Reported unachievable reason: {pred}
+
+Determine if the reported reason aligns with the actual reason, even if implicitly.
+
+Respond with exactly one word: same or different

@@ -1,0 +1,65 @@
+# MySQL/Shopping configuration for the container-free WebAgent path.
+#
+# The Magento/PHP HTTP service remains shared; the trusted route registry
+# exposes the selected MySQL endpoint to a Magento adapter. A small host
+# mysqld is started only for the active logical branch. No per-agent Docker
+# container is created by MySQLXFSReflinkManager.
+
+environment:
+  isolation:
+    mode: db
+
+  db_isolation:
+    route_token_header: X-Agent-Route
+    route_token_secret: replace-with-at-least-32-random-bytes
+    route_token_ttl_seconds: 86400
+    route_registry_path: ./runtime/db_routes.sqlite3
+    route_drain_timeout_seconds: 30
+    reset_on_setup: true
+    drop_on_close: true
+
+    # The shared application adapter must consume db_engine/db_host/db_port
+    # from the trusted route before a Shopping task is admitted.
+    mysql_xfs:
+      enabled: true
+      sites: [shopping, shopping_admin]
+      xfs_base_path: ${WEBAGENT_ROOT:-/var/lib/web-agent}/mysql_clone_xfs
+      runtime_root: ${WEBAGENT_ROOT:-/var/lib/web-agent}/mysql_clone_xfs/runtime
+      template_name: magento_template
+      database_name: magentodb
+      bind_host: 127.0.0.1
+      advertised_host: 127.0.0.1
+      mysql_port_base: 13306
+      mysql_max_instances: 1000
+      mysql_user: root
+      mysql_password: ""
+      mysqld_binary: mysqld
+      mysqladmin_binary: mysqladmin
+      launch_enabled: true
+      startup_timeout_seconds: 60
+      shutdown_timeout_seconds: 30
+      mysqld_extra_args: []
+
+    shared_site_hosts:
+      shopping: 127.0.0.1:7770
+      shopping_admin: 127.0.0.1:7780
+
+## State lifecycle
+#
+# The template is quiesced before it is used. `prepare` reflink-clones it into
+# an environment/branch tree and starts `mysqld` against that tree. The active
+# route contains `db_engine=mysql`, database name, host, and port. The browser
+# continues to use the Shopping HTTP host; the MySQL endpoint is never used as
+# an HTTP target.
+#
+# `checkpoint` stops mysqld briefly and reflink-clones a cold checkpoint tree;
+# `fork` starts a child branch from that tree; `reset` removes the environment
+# tree and recreates `root` from the immutable template; `cleanup` stops all
+# active branch processes and removes the environment tree. All operations are
+# performed after the normal route freeze/drain barrier.
+#
+# The application still needs an app-specific adapter. It can use
+# `RoutedMySQLConnector` or the WSGI/ASGI route environment exposed by
+# `rl_web_agent.isolation.db_routing`; the adapter must also route Magento media,
+# Redis/session/cache, queue, and search state before Shopping tasks are
+# admitted.

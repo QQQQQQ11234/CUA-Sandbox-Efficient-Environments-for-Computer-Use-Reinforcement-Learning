@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "app": "shopping",
+  "scope": "WebArena Magento storefront shared-runtime inference backend",
+  "components": [
+    {
+      "name": "mysql",
+      "state_class": "authoritative",
+      "strategy": "quiesced_datadir_xfs_reflink_branch_with_one_active_host_mysqld",
+      "status": "implemented",
+      "reset": "replace active datadir from immutable Magento template",
+      "fork": "reflink cold checkpoint datadir into target branch",
+      "notes": "The PHP application consumes only the signed route registry endpoint."
+    },
+    {
+      "name": "media",
+      "state_class": "authoritative",
+      "strategy": "immutable_shared_baseline_with_request_routed_branch_delta",
+      "status": "unsupported",
+      "reset": "discard branch delta; immutable baseline remains shared",
+      "fork": "reflink checkpoint branch delta",
+      "notes": "Reads and add-only writes are routed, but replacement/deletion whiteouts are not implemented. All current tasks exclude media mutations and future media-mutating tasks fail closed."
+    },
+    {
+      "name": "sessions",
+      "state_class": "authoritative",
+      "strategy": "request_routed_file_session_directory",
+      "status": "implemented",
+      "reset": "restore baseline authenticated sessions",
+      "fork": "reflink checkpoint session directory",
+      "notes": "Preserves WebArena storage-state login cookies without cross-tenant files."
+    },
+    {
+      "name": "redis_cache",
+      "state_class": "derived",
+      "strategy": "generation_namespaced_magento_cache_prefix",
+      "status": "implemented",
+      "reset": "activate a fresh generation prefix",
+      "fork": "activate a fresh target-branch prefix",
+      "notes": "Only derived Magento cache/page-cache data uses shared Redis."
+    },
+    {
+      "name": "queue",
+      "state_class": "authoritative",
+      "strategy": "mysql_backed_queue_with_shared_cron_disabled_and_lifecycle_drain",
+      "status": "implemented",
+      "reset": "quiesce request and restore queue tables with MySQL branch",
+      "fork": "fork queue tables with MySQL checkpoint",
+      "notes": "The shared image disables cron; no unscoped consumer may run."
+    },
+    {
+      "name": "opensearch",
+      "state_class": "derived",
+      "strategy": "per_branch_index_prefix_and_rebuild",
+      "status": "implemented",
+      "reset": "delete target prefix and rebuild catalogsearch_fulltext",
+      "fork": "rebuild target prefix from the forked MySQL branch",
+      "notes": "Index prefix comes from the trusted route and never from an HTTP parameter."
+    },
+    {
+      "name": "mail",
+      "state_class": "authoritative",
+      "strategy": "not_routed_in_current_webarena_mailcatcher",
+      "status": "unsupported",
+      "reset": "not available",
+      "fork": "not available",
+      "notes": "Official contact-draft tasks only populate browser-local form fields and exclude mail. Any task that actually sends mail is rejected by the capability gate."
+    }
+  ]
+}

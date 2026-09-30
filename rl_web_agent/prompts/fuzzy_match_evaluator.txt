@@ -1,0 +1,9 @@
+You are a helpful assistant that evaluates student answers. Help a teacher grade a student's answer. Determine if the student's answer is semantically equivalent to the reference answer, allowing for different phrasing.
+
+Question: {question}
+Reference answer: {reference}
+Student answer: {pred}
+
+Note: 'N/A' means 'not achievable'
+
+Respond with exactly one word: correct, incorrect, or partially_correct

@@ -1,0 +1,344 @@
+# @package _global_
+#
+# Single configuration file with all settings.
+# Override any setting from the command line:
+#   python -m rl_web_agent.main environment.browser.headless=true environment.proxy.enabled=false
+
+# ============================================================================
+# ENVIRONMENT CONFIGURATION
+# ============================================================================
+# Web environment including browser, proxy, and script paths
+environment:
+  # All deployment-specific values are supplied through environment variables
+  # or a local Hydra override.  The defaults below are safe for a fresh clone.
+  isolation:
+    mode: ${oc.env:WEB_AGENT_ISOLATION_MODE,db} # db or direct
+
+  # Database-level isolation config (used when environment.isolation.mode=db)
+  db_isolation:
+    admin_dsn: ${oc.env:DB_ADMIN_DSN,""} # Example: postgresql://postgres:postgres@127.0.0.1:5432/postgres
+    admin_docker_container: ${oc.env:DB_ADMIN_DOCKER_CONTAINER,""} # Local WebArena GitLab PoC only; uses docker exec gitlab-psql
+    admin_docker_psql_command: "gitlab-psql"
+    base_template_db: ${oc.env:DB_BASE_TEMPLATE,base_template_db}
+    clone_strategy: ${oc.env:DB_CLONE_STRATEGY,FILE_COPY} # FILE_COPY, WAL_LOG, or TEMPLATE for PostgreSQL < 15
+    agent_db_prefix: "agent_"
+    agent_db_suffix: "_db"
+    route_token_header: "X-Agent-Route" # Signed capability; never accept a raw DB name
+    route_token_secret: ${oc.env:ROUTE_TOKEN_SECRET,""} # Required; use at least 32 random bytes
+    route_token_ttl_seconds: 86400
+    checkpoint_tag: "_ckpt_"
+    branch_tag: "_branch_"
+    route_registry_path: ${oc.env:ROUTE_REGISTRY_PATH,./runtime/db_routes.sqlite3}
+    reset_on_setup: true
+    drop_on_close: true
+    route_drain_timeout_seconds: 30 # freeze -> wait for admitted HTTP requests
+    evaluation_drain_timeout_seconds: 30 # wait for routed Sidekiq jobs before scoring
+    rails_pool_release_enabled: true # release the frozen route's pool before DB lifecycle operations
+    rails_pool_release_timeout_seconds: 2
+    rails_pool_release_path: "/__web_agent_release_pool"
+    # Magento/Shopping backend for MySQL, which has no PostgreSQL-style
+    # database CoW clone.  The shared Magento/PHP service consumes the trusted
+    # route's db_engine/db_host/db_port/db_name; only the active branch's
+    # lightweight mysqld owns process memory. The backend is initialized lazily
+    # for Shopping, then fails closed if host/template prerequisites are absent.
+    mysql_xfs:
+      enabled: ${oc.env:MYSQL_XFS_ENABLED,true}
+      sites: [shopping, shopping_admin]
+      xfs_base_path: ${oc.env:MYSQL_XFS_BASE_PATH,./runtime/mysql_clone_xfs}
+      runtime_root: ${oc.env:MYSQL_XFS_RUNTIME_ROOT,./runtime/mysql_clone_xfs/runtime}
+      template_name: magento_template
+      templates:
+        shopping: magento_template
+        shopping_admin: magento_admin_template
+      database_name: magentodb
+      bind_host: ${oc.env:MYSQL_BIND_HOST,172.17.0.1}
+      admin_host: ${oc.env:MYSQL_ADMIN_HOST,172.17.0.1}
+      advertised_host: ${oc.env:MYSQL_ADVERTISED_HOST,172.17.0.1}
+      mysql_port_base: 13306
+      mysql_max_instances: 1000
+      mysql_user: ${oc.env:MYSQL_USER,magentouser}
+      mysql_password: ${oc.env:MYSQL_PASSWORD,""}
+      # Reuse one tiny runtime container only as a MariaDB binary namespace;
+      # each logical branch is still a host-network mysqld over an XFS CoW
+      # datadir. No per-agent application/container stack is created.
+      launch_mode: ${oc.env:MYSQL_LAUNCH_MODE,docker_exec}
+      runtime_container: ${oc.env:MYSQL_RUNTIME_CONTAINER,shopping-mysql-runtime}
+      runtime_container_user: ${oc.env:MYSQL_RUNTIME_CONTAINER_USER,""} # empty => mysql user + current host gid
+      mysqld_binary: ${oc.env:MYSQLD_BINARY,mysqld}
+      mysqladmin_binary: ${oc.env:MYSQLADMIN_BINARY,mysqladmin}
+      launch_enabled: ${oc.env:MYSQL_LAUNCH_ENABLED,true}
+      startup_timeout_seconds: 60
+      shutdown_timeout_seconds: 30
+      mysqld_extra_args: []
+    state_audit:
+      enabled: true # Fail closed: DB mode only admits tasks with reviewed state contracts
+      audit_paths:
+        - "experiments/state_audits/gitlab.json"
+        - "experiments/state_audits/shopping.json"
+        - "experiments/state_audits/shopping_admin.json"
+      task_manifest_paths:
+        - "experiments/gitlab/gitlab_task_contracts.json"
+        - "experiments/shopping/shopping_task_contracts.json"
+    # Non-DB lifecycle drivers. Each backend filters by site and fails closed
+    # when that site's immutable template or routed adapter is unavailable.
+    non_db_state:
+      enabled: ${oc.env:NON_DB_STATE_ENABLED,true}
+      runtime_root: "./runtime/non_db_state"
+      worker_mode: "shared" # shared, or dedicated for OverlayFS compatibility
+      overlay:
+        enabled: false
+        mount_enabled: false
+        runtime_root: "./runtime/non_db_overlay"
+        components: {}
+        # Dedicated-worker example:
+        # uploads: "/var/opt/gitlab/gitlab-rails/uploads"
+        # artifacts: "/var/opt/gitlab/gitlab-rails/shared/artifacts"
+        # gitaly: "/var/opt/gitlab/git-data/repositories"
+      gitlab_state:
+        enabled: ${oc.env:GITLAB_NON_DB_ADAPTER_ENABLED,false}
+        docker_container: ${oc.env:GITLAB_SHARED_CONTAINER,shared-gitlab-test}
+        statectl_path: "/opt/web-agent/gitlab_statectl.rb"
+        timeout_seconds: 300
+      magento_state:
+        enabled: ${oc.env:MAGENTO_STATE_ADAPTER_ENABLED,true}
+        sites: [shopping, shopping_admin]
+        template_root: ${oc.env:MAGENTO_STATE_TEMPLATE_ROOT,./runtime/mysql_clone_xfs/magento_template}
+        template_roots:
+          shopping: ${oc.env:MAGENTO_STATE_TEMPLATE_ROOT,./runtime/mysql_clone_xfs/magento_template}
+          shopping_admin: ${oc.env:MAGENTO_ADMIN_STATE_TEMPLATE_ROOT,./runtime/mysql_clone_xfs/magento_admin_template}
+        runtime_root: ${oc.env:MAGENTO_STATE_RUNTIME_ROOT,./runtime/mysql_clone_xfs/runtime/magento_state}
+        container_root: ${oc.env:MAGENTO_STATE_CONTAINER_ROOT,./runtime/magento-state}
+      # App-specific Sidekiq pause/drain and OpenSearch rebuild commands.
+      # Every command is an argv list and is executed without a shell. Hooks
+      # receive WEB_AGENT_* identity/namespace environment variables.
+      command_hooks:
+        - name: magento_search_queue
+          enabled: ${oc.env:MAGENTO_STATE_HOOKS_ENABLED,true}
+          timeout_seconds: 1800
+          commands:
+            prepare:
+              - ["python3", "scripts/magento_state_lifecycle.py", "prepare"]
+            quiesce:
+              - ["python3", "scripts/magento_state_lifecycle.py", "quiesce"]
+            checkpoint:
+              - ["python3", "scripts/magento_state_lifecycle.py", "checkpoint"]
+            fork:
+              - ["python3", "scripts/magento_state_lifecycle.py", "fork"]
+            reset:
+              - ["python3", "scripts/magento_state_lifecycle.py", "reset"]
+            activate:
+              - ["python3", "scripts/magento_state_lifecycle.py", "activate"]
+            cleanup:
+              - ["python3", "scripts/magento_state_lifecycle.py", "cleanup"]
+    # Shared web app hosts for each site. Value can be "host" or "host:port".
+    shared_site_hosts:
+      shopping: ${oc.env:SHOPPING_SHARED_TARGET,127.0.0.1:7772}
+      shopping_admin: ${oc.env:SHOPPING_ADMIN_SHARED_TARGET,127.0.0.1:7772}
+      reddit: "127.0.0.1"
+      gitlab: "127.0.0.1"
+      map: "127.0.0.1"
+      wikipedia: "127.0.0.1"
+
+  # Task evaluation settings
+  evaluation:
+    enabled: true # Global flag to enable/disable task evaluation
+
+  # Recording configuration
+  recording:
+    enabled: false # Enable screen recording using QuickRecorder
+
+  # Site configurations - mapping of site names to their hostnames
+  # These hostnames will be rewritten to actual IP addresses by the proxy
+  sites:
+    shopping: ${oc.env:SHOPPING_SITE_AUTHORITY,shopping.local:7770}
+    shopping_admin: ${oc.env:SHOPPING_ADMIN_SITE_AUTHORITY,shopping-admin.local:7780}
+    reddit: ${oc.env:REDDIT_SITE_AUTHORITY,reddit.local:9999}
+    gitlab: ${oc.env:GITLAB_SITE_AUTHORITY,gitlab.local:8023}
+    map: ${oc.env:MAP_SITE_AUTHORITY,map.local:3000}
+    wikipedia: ${oc.env:WIKIPEDIA_SITE_AUTHORITY,wikipedia.local:8888}
+  server_port_map:
+    gitlab: 8023
+    shopping: 80
+    shopping_admin: 80
+
+  init_script_path: "rl_web_agent/javascript/initscript.js" # Path to JavaScript init script
+  parser_script_path: "rl_web_agent/javascript/parser.js" # Path to JavaScript parser script
+
+  # Proxy configuration
+  proxy:
+    server: "http://localhost:8080" # Proxy server URL (must be running)
+    enabled: false # DB routing is direct; opt in only for an available external proxy
+
+  # Browser configuration
+  # Maps directly to Playwright's launch and context options
+  # Add any Playwright option by following their API structure:
+  # https://playwright.dev/python/docs/api/class-browsertype#browser-type-launch
+  # https://playwright.dev/python/docs/api/class-browser#browser-new-context
+  browser:
+    # Keep this Playwright revision independent from official WebArena's older
+    # Chromium. Both environments may run on the same machine concurrently.
+    browsers_path: ${oc.env:PLAYWRIGHT_BROWSERS_PATH,""}
+    # Launch options
+    launch_options:
+      headless: true # Show browser window (set true for CI/automation)
+      args: # Performance optimization args
+        - "--disable-autofill-keyboard-accessory-view"
+        - "--disable-autofill-profile-update"
+        - "--disable-autofill"
+        - "--disable-extensions"
+        - "--disable-background-networking"
+        - "--safebrowsing-disable-auto-update"
+        - "--disable-component-update"
+        - "--disable-default-apps"
+        - "--no-first-run"
+        - "--no-default-browser-check"
+        - "--metrics-recording-only"
+        - "--disable-sync"
+        - "--disable-translate"
+        # Removed NetworkService disable as it can interfere with caching
+        # - "--disable-features=NetworkService,NetworkServiceInProcess"
+        - "--disable-client-side-phishing-detection"
+        - "--disable-domain-reliability"
+        - "--disable-crash-reporter"
+
+    # Context options
+    context_options:
+      viewport:
+        width: 1280 # WebArena official default
+        height: 720 # WebArena official default
+      user_agent: null # User agent string to use
+      extra_http_headers: null # Will be set for host rewrites if needed
+
+    # Browser cache and data directories
+    cache_dir: null # WebArena uses a fresh browser context per task
+    user_data_dir: null # Do not share cookies/localStorage between tasks
+
+    # Timeout configurations (in milliseconds)
+    timeouts:
+      default: 60000 # Timeout for locator actions (click, type, etc.)
+      page_load_domcontent: 10000 # Timeout for DOM content loaded
+      page_load_networkidle: 60000 # Timeout for network idle (longer for full page loads)
+      element_wait: 10000 # Timeout for waiting for specific elements
+      custom_network_idle: 5000 # Time to wait for no network activity before considering idle
+      container_health_check: 120000 # Timeout for container health checks (in milliseconds)
+
+    # Sleep configuration (in seconds)
+    sleep_after_action: 2 # Sleep time after each action (helps with page stability)
+
+  # Browser tracing for debugging and analysis
+  tracing:
+    enabled: false # Enable Playwright tracing
+    output_path: "trace.zip" # File path for trace output
+    screenshots: true # Include screenshots in traces
+    snapshots: true # Include DOM snapshots in traces
+    sources: true # Include source code in traces
+
+  # Account credentials for WebArena sites
+  accounts:
+    shopping:
+      username: ${oc.env:SHOPPING_USERNAME,""}
+      password: ${oc.env:SHOPPING_PASSWORD,""}
+    shopping_shopping_admin:
+      username: ${oc.env:SHOPPING_ADMIN_USERNAME,""}
+      password: ${oc.env:SHOPPING_ADMIN_PASSWORD,""}
+    shopping_admin:
+      username: ${oc.env:SHOPPING_CMS_USERNAME,""}
+      password: ${oc.env:SHOPPING_CMS_PASSWORD,""}
+    reddit:
+      username: ${oc.env:REDDIT_USERNAME,""}
+      password: ${oc.env:REDDIT_PASSWORD,""}
+    gitlab:
+      username: ${oc.env:GITLAB_USERNAME,""}
+      password: ${oc.env:GITLAB_PASSWORD,""}
+
+# ============================================================================
+# AGENT CONFIGURATION
+# ============================================================================
+# Web agent behavior settings
+agent:
+  max_steps: 30 # WebArena official default
+  max_obs_length: 1920 # WebArena official token limit used by this Qwen run
+  stateless_observations: true # Official WebArena rebuilds each prompt per step
+  loop_detection:
+    enabled: true
+    max_repetitions: 3 # WebArena repeated-action threshold
+
+# ============================================================================
+# LLM CONFIGURATION
+# ============================================================================
+# Large Language Model provider settings
+llm:
+  provider: ${oc.env:LLM_PROVIDER,openai} # Provider: "openai" or "bedrock"
+  max_concurrent: 5 # Maximum concurrent API calls
+
+  # Generation parameters (applied to all providers)
+  generation:
+    temperature: 1 # Sampling temperature (0.0 = deterministic, 1.0 = very random)
+    max_tokens: 1000 # Maximum tokens to generate
+    top_p: 0.95 # Nucleus sampling parameter
+    frequency_penalty: 0.0 # Frequency penalty (OpenAI only)
+    presence_penalty: 0.0 # Presence penalty (OpenAI only)
+    stop: [] # Stop sequences
+
+  # OpenAI Configuration
+  openai:
+    api_key: "${oc.env:OPENAI_API_KEY}" # OpenAI API key from environment
+    base_url: ${oc.env:OPENAI_BASE_URL,https://api.openai.com/v1}
+    model: ${oc.env:OPENAI_MODEL,gpt-4o-mini}
+    timeout: 60 # Request timeout in seconds
+    max_retries: 2 # Maximum retry attempts
+    thinking_enabled: false # Enable thinking mode
+    health_check:
+      enabled: true
+      preflight_timeout_seconds: 15
+      recovery_timeout_seconds: 900
+      interval_seconds: 5
+
+  # AWS Bedrock Configuration
+  bedrock:
+    region: "us-east-1" # AWS region
+    model_id: ${oc.env:BEDROCK_MODEL_ID,""} # Bedrock model ID
+    timeout: 60 # Request timeout in seconds
+
+    # Thinking configuration (for Claude models that support reasoning)
+    thinking:
+      enabled: true # Enable thinking mode
+      budget_tokens: 32000 # Token budget for reasoning
+
+    # Additional Bedrock-specific request fields to be merged into Converse API calls
+    # Example: request tags, guardrail configs, or model-specific options
+    additionalModelRequestFields: {}
+
+# ============================================================================
+# EVALUATOR LLM CONFIGURATION
+# ============================================================================
+# LiteLLM configuration for evaluator (separate from agent LLM)
+# Uses LiteLLM library for unified model access: https://docs.litellm.ai/
+# API keys are read from environment variables automatically by LiteLLM
+evaluator_llm:
+  # Use the same OpenAI-compatible endpoint as the current official WebArena
+  # run. This avoids silently depending on unavailable AWS credentials.
+  provider: openai
+  model: ${oc.env:EVALUATOR_LLM_MODEL,openai/Qwen/Qwen3.5-9B}
+  base_url: ${oc.env:EVALUATOR_LLM_BASE_URL,http://127.0.0.1:8000/v1}
+  api_key: ${oc.env:EVALUATOR_LLM_API_KEY,EMPTY}
+  temperature: 0.0
+  max_tokens: 768
+  max_retries: 3
+  timeout: 300
+
+# ============================================================================
+# GENERAL SETTINGS
+# ============================================================================
+debug: false # Enable debug logging and detailed output
+log_level: DEBUG # Logging level: DEBUG, INFO, WARNING, ERROR
+aws_account_id: ${oc.env:AWS_ACCOUNT_ID,""}
+# ============================================================================
+# HYDRA SETTINGS
+# ============================================================================
+# Controls output directory and job behavior
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S} # Timestamped output directory
+  job:
+    chdir: false # Don't change working directory during execution

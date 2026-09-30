@@ -1,0 +1,7570 @@
+{
+  "selection_policy": "All 369 pure Shopping/Shopping Admin tasks classified by reviewed intent template; browser-local contact drafts are read-only app tasks and actual unsupported mail mutations remain fail-closed.",
+  "task_count": 369,
+  "site_counts": {
+    "shopping": 187,
+    "shopping_admin": 182
+  },
+  "components": [
+    "mail",
+    "media",
+    "mysql",
+    "opensearch",
+    "queue",
+    "redis_cache",
+    "sessions"
+  ],
+  "tasks": [
+    {
+      "task_id": 0,
+      "site": "shopping_admin",
+      "intent_template_id": 279,
+      "intent": "What is the top-1 best-selling product in 2022",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 1,
+      "site": "shopping_admin",
+      "intent_template_id": 279,
+      "intent": "What is the top-1 best-selling brand in Quarter 1 2022",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 2,
+      "site": "shopping_admin",
+      "intent_template_id": 279,
+      "intent": "What is the top-1 best-selling product type in Quarter 1 2022",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 3,
+      "site": "shopping_admin",
+      "intent_template_id": 279,
+      "intent": "What are the top-2 best-selling product in 2022",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 4,
+      "site": "shopping_admin",
+      "intent_template_id": 279,
+      "intent": "What are the top-3 best-selling product in Jan 2023",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 5,
+      "site": "shopping_admin",
+      "intent_template_id": 279,
+      "intent": "What is the top-1 best-selling product type in Jan 2023",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 6,
+      "site": "shopping_admin",
+      "intent_template_id": 279,
+      "intent": "What are the top-5 best-selling product in 2023",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 11,
+      "site": "shopping_admin",
+      "intent_template_id": 288,
+      "intent": "Tell me the the number of reviews that our store received by far that mention term \"disappointed\"",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 12,
+      "site": "shopping_admin",
+      "intent_template_id": 288,
+      "intent": "Tell me the the number of reviews that our store received by far that mention term \"satisfied\"",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 13,
+      "site": "shopping_admin",
+      "intent_template_id": 288,
+      "intent": "Tell me the the number of reviews that our store received by far that mention term \"decent\"",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 14,
+      "site": "shopping_admin",
+      "intent_template_id": 288,
+      "intent": "Tell me the the number of reviews that our store received by far that mention term \"not useful\"",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 15,
+      "site": "shopping_admin",
+      "intent_template_id": 288,
+      "intent": "Tell me the the number of reviews that our store received by far that mention term \"best\"",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 21,
+      "site": "shopping",
+      "intent_template_id": 222,
+      "intent": "List out reviewers, if exist, who mention about ear cups being small",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 22,
+      "site": "shopping",
+      "intent_template_id": 222,
+      "intent": "List out reviewers, if exist, who mention about under water photo",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 23,
+      "site": "shopping",
+      "intent_template_id": 222,
+      "intent": "List out reviewers, if exist, who mention about good fingerprint resistant",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 24,
+      "site": "shopping",
+      "intent_template_id": 222,
+      "intent": "List out reviewers, if exist, who mention about price being unfair",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 25,
+      "site": "shopping",
+      "intent_template_id": 222,
+      "intent": "List out reviewers, if exist, who mention about average print quality",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 26,
+      "site": "shopping",
+      "intent_template_id": 222,
+      "intent": "List out reviewers, if exist, who mention about complain of the customer service",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 41,
+      "site": "shopping_admin",
+      "intent_template_id": 285,
+      "intent": "List the top 1 search terms in my store",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 42,
+      "site": "shopping_admin",
+      "intent_template_id": 285,
+      "intent": "List the top 2 search terms in my store",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 43,
+      "site": "shopping_admin",
+      "intent_template_id": 285,
+      "intent": "List the top 3 search terms in my store",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 47,
+      "site": "shopping",
+      "intent_template_id": 197,
+      "intent": "Today is 6/12/2023. Tell me how many fulfilled orders I have over the past month, and the total amount of money I spent.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 48,
+      "site": "shopping",
+      "intent_template_id": 197,
+      "intent": "Today is 6/12/2023. Tell me how many fulfilled orders I have over the past three days, and the total amount of money I spent.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 49,
+      "site": "shopping",
+      "intent_template_id": 197,
+      "intent": "Today is 6/12/2023. Tell me how many fulfilled orders I have over the past four month, and the total amount of money I spent.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 50,
+      "site": "shopping",
+      "intent_template_id": 197,
+      "intent": "Today is 6/12/2023. Tell me how many fulfilled orders I have over the past year, and the total amount of money I spent.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 51,
+      "site": "shopping",
+      "intent_template_id": 197,
+      "intent": "Today is 6/12/2023. Tell me how many fulfilled orders I have over the past six month, and the total amount of money I spent.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 62,
+      "site": "shopping_admin",
+      "intent_template_id": 276,
+      "intent": "Which customer has completed the most number of orders in the entire history?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 63,
+      "site": "shopping_admin",
+      "intent_template_id": 276,
+      "intent": "Which customer(s) has completed the second most number of orders in the entire history?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 64,
+      "site": "shopping_admin",
+      "intent_template_id": 276,
+      "intent": "Which customer has placed 2 orders in the entire history?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 65,
+      "site": "shopping_admin",
+      "intent_template_id": 276,
+      "intent": "Which customer has completed the fifth most number of orders in the entire history?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 77,
+      "site": "shopping_admin",
+      "intent_template_id": 277,
+      "intent": "What is the total count of Pending reviews amongst all the reviews?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 78,
+      "site": "shopping_admin",
+      "intent_template_id": 277,
+      "intent": "What is the total count of Approved reviews amongst all the reviews?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 79,
+      "site": "shopping_admin",
+      "intent_template_id": 277,
+      "intent": "What is the total count of Not Approved reviews amongst all the reviews?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 94,
+      "site": "shopping_admin",
+      "intent_template_id": 274,
+      "intent": "Telll me the grand total of invoice 000000001.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 95,
+      "site": "shopping_admin",
+      "intent_template_id": 274,
+      "intent": "Telll me the grand total of invoice 000000002.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 96,
+      "site": "shopping",
+      "intent_template_id": 193,
+      "intent": "Tell me the status of my latest order and when will it arrive",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 107,
+      "site": "shopping_admin",
+      "intent_template_id": 270,
+      "intent": "Presents the monthly count of successful orders from May to December 2022 in MM:COUNT format",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 108,
+      "site": "shopping_admin",
+      "intent_template_id": 270,
+      "intent": "Presents the monthly count of successful orders 01/2023-05/2023 in MM:COUNT format",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 109,
+      "site": "shopping_admin",
+      "intent_template_id": 270,
+      "intent": "Presents the monthly count of successful orders from Jan to December 2022 in MM:COUNT format",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 110,
+      "site": "shopping_admin",
+      "intent_template_id": 270,
+      "intent": "Presents the monthly count of successful orders from Jan to Nov 2022 in MM:COUNT format",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 111,
+      "site": "shopping_admin",
+      "intent_template_id": 270,
+      "intent": "Presents the monthly count of successful orders from Feb to Nov 2022 in MM:COUNT format",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 112,
+      "site": "shopping_admin",
+      "intent_template_id": 245,
+      "intent": "Show me the customers who have expressed dissatisfaction with Circe fleece?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 113,
+      "site": "shopping_admin",
+      "intent_template_id": 245,
+      "intent": "Show me the customers who have expressed dissatisfaction with Olivia zip jacket?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 114,
+      "site": "shopping_admin",
+      "intent_template_id": 245,
+      "intent": "Show me the customers who have expressed dissatisfaction with Antonia racer tank?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 115,
+      "site": "shopping_admin",
+      "intent_template_id": 245,
+      "intent": "Show me the name of the customers who have expressed dissatisfaction with Chloe tank",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 116,
+      "site": "shopping_admin",
+      "intent_template_id": 245,
+      "intent": "Show me the name of the customers who have expressed dissatisfaction with tanks products?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 117,
+      "site": "shopping",
+      "intent_template_id": 161,
+      "intent": "What is the date when I made my first purchase on this site?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 118,
+      "site": "shopping",
+      "intent_template_id": 151,
+      "intent": "I have jaw bruxism problem, show me something that could alleviate the problem.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 119,
+      "site": "shopping_admin",
+      "intent_template_id": 250,
+      "intent": "Tell me the reasons why customers like Antonia Racer Tank",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 120,
+      "site": "shopping_admin",
+      "intent_template_id": 250,
+      "intent": "Tell me the reasons why customers like Ana Running Short",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 121,
+      "site": "shopping_admin",
+      "intent_template_id": 250,
+      "intent": "Tell me the reasons why customers like Circe hooded fleece",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 122,
+      "site": "shopping_admin",
+      "intent_template_id": 250,
+      "intent": "Tell me the reasons why customers like Olivia zip jacket",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 123,
+      "site": "shopping_admin",
+      "intent_template_id": 250,
+      "intent": "Tell me the reasons why customers like Circe's products",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 124,
+      "site": "shopping",
+      "intent_template_id": 159,
+      "intent": "What is the price range of wireless earphone in the One Stop Market?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 125,
+      "site": "shopping",
+      "intent_template_id": 159,
+      "intent": "What is the price range of teeth grinding mouth guard in the One Stop Market?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 126,
+      "site": "shopping",
+      "intent_template_id": 159,
+      "intent": "What is the price range of Canon photo printer in the One Stop Market?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 127,
+      "site": "shopping_admin",
+      "intent_template_id": 1001,
+      "intent": "What brands appear most frequently among the top search terms?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 128,
+      "site": "shopping_admin",
+      "intent_template_id": 1002,
+      "intent": "What's the total number of items sold in the most recent 2 orders?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 129,
+      "site": "shopping_admin",
+      "intent_template_id": 1002,
+      "intent": "What's the total number of items sold in the most recent 4 orders?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 130,
+      "site": "shopping_admin",
+      "intent_template_id": 1002,
+      "intent": "What's the total number of items sold in the most recent 5 orders?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 131,
+      "site": "shopping_admin",
+      "intent_template_id": 1002,
+      "intent": "What's the total number of items sold in the most recent 7 orders?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 141,
+      "site": "shopping",
+      "intent_template_id": 162,
+      "intent": "How much I spent on food-related shopping during March 2023",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 142,
+      "site": "shopping",
+      "intent_template_id": 162,
+      "intent": "How much I spent on hair care and hair style shopping during Jan 2023",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 143,
+      "site": "shopping",
+      "intent_template_id": 162,
+      "intent": "How much I spent on home decoration shopping during 1/29/2023",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 144,
+      "site": "shopping",
+      "intent_template_id": 162,
+      "intent": "How much I spent on food shopping during from mid Jan to the end Jan 2023",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 145,
+      "site": "shopping",
+      "intent_template_id": 162,
+      "intent": "How much I spent on cooking and food shopping during March 2022",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 146,
+      "site": "shopping",
+      "intent_template_id": 155,
+      "intent": "What is the size configuration of the picture frame I bought Sep 2022",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 147,
+      "site": "shopping",
+      "intent_template_id": 155,
+      "intent": "What is the size configuration of the picture frame I bought 2022",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 148,
+      "site": "shopping",
+      "intent_template_id": 155,
+      "intent": "What is the color configuration of the picture frame I bought Sep 2022",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 149,
+      "site": "shopping",
+      "intent_template_id": 155,
+      "intent": "What is the color configuration of the artifical plants I bought Feb 2023",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 150,
+      "site": "shopping",
+      "intent_template_id": 155,
+      "intent": "What is the price configuration of the fake tree I bought Jan 2023",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 157,
+      "site": "shopping_admin",
+      "intent_template_id": 255,
+      "intent": "Show all customers",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 158,
+      "site": "shopping",
+      "intent_template_id": 171,
+      "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 11 cards",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 159,
+      "site": "shopping",
+      "intent_template_id": 171,
+      "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 31 cards",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 160,
+      "site": "shopping",
+      "intent_template_id": 171,
+      "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 6 cards",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 161,
+      "site": "shopping",
+      "intent_template_id": 171,
+      "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 23 cards",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 162,
+      "site": "shopping",
+      "intent_template_id": 171,
+      "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 40 cards",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 163,
+      "site": "shopping",
+      "intent_template_id": 136,
+      "intent": "What are the main criticisms of this product? Please extract the relevant sentences.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 164,
+      "site": "shopping",
+      "intent_template_id": 136,
+      "intent": "What are the main criticisms of this product? Please extract the relevant sentences.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 165,
+      "site": "shopping",
+      "intent_template_id": 136,
+      "intent": "What are the main criticisms of this product? Please extract the relevant sentences.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 166,
+      "site": "shopping",
+      "intent_template_id": 136,
+      "intent": "What are the main criticisms of this product? Please extract the relevant sentences.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 167,
+      "site": "shopping",
+      "intent_template_id": 136,
+      "intent": "What are the main criticisms of this product? Please extract the relevant sentences.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 183,
+      "site": "shopping_admin",
+      "intent_template_id": 368,
+      "intent": "Give me the SKU of the products that have 10 units left",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 184,
+      "site": "shopping_admin",
+      "intent_template_id": 368,
+      "intent": "Give me the name of the products that have 0 units left",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 185,
+      "site": "shopping_admin",
+      "intent_template_id": 368,
+      "intent": "Give me the brand of the products that have 3 units left",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 186,
+      "site": "shopping_admin",
+      "intent_template_id": 368,
+      "intent": "Give me the product names and the sizes of the products that have 2-3 units left",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 187,
+      "site": "shopping_admin",
+      "intent_template_id": 368,
+      "intent": "Give me the SKU of the products that have 1-3 units left",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 188,
+      "site": "shopping",
+      "intent_template_id": 214,
+      "intent": "Tell me the total cost of my latest cancelled order?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 189,
+      "site": "shopping",
+      "intent_template_id": 214,
+      "intent": "Tell me the total cost of my latest pending order?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 190,
+      "site": "shopping",
+      "intent_template_id": 214,
+      "intent": "Tell me the total cost of my latest complete order?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 191,
+      "site": "shopping",
+      "intent_template_id": 214,
+      "intent": "Tell me the total cost of my latest processing order?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 192,
+      "site": "shopping",
+      "intent_template_id": 214,
+      "intent": "Tell me the total cost of my latest non-cancelled order?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 193,
+      "site": "shopping_admin",
+      "intent_template_id": 367,
+      "intent": "Get the total payment amount of the last 2 completed orders",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 194,
+      "site": "shopping_admin",
+      "intent_template_id": 367,
+      "intent": "Get the total payment amount of the last 5 completed orders",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 195,
+      "site": "shopping_admin",
+      "intent_template_id": 367,
+      "intent": "Get the total payment amount of the last 5 pending orders",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 196,
+      "site": "shopping_admin",
+      "intent_template_id": 367,
+      "intent": "Compare the payment difference of the last 4 cancelled orders and completed orders",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 197,
+      "site": "shopping_admin",
+      "intent_template_id": 367,
+      "intent": "Get the total payment amount of the last 5 non-cancelled orders",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 198,
+      "site": "shopping_admin",
+      "intent_template_id": 366,
+      "intent": "Get the customer name of the most recent cancelled order",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 199,
+      "site": "shopping_admin",
+      "intent_template_id": 366,
+      "intent": "Get the order ID of the newest pending order",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 200,
+      "site": "shopping_admin",
+      "intent_template_id": 366,
+      "intent": "Get the billing name of the oldest complete order",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 201,
+      "site": "shopping_admin",
+      "intent_template_id": 366,
+      "intent": "Get the customer name of the earliest fraud suspect order",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 202,
+      "site": "shopping_admin",
+      "intent_template_id": 366,
+      "intent": "Get the date of the most recent canlled order",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 203,
+      "site": "shopping_admin",
+      "intent_template_id": 366,
+      "intent": "Get the purchase date and order id of the most recent pending order",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 204,
+      "site": "shopping_admin",
+      "intent_template_id": 366,
+      "intent": "Get the product name and discounted price (low to high) of the most recent completed order",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 208,
+      "site": "shopping_admin",
+      "intent_template_id": 364,
+      "intent": "Find the customer name and email with phone number +1 2058812302",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 209,
+      "site": "shopping_admin",
+      "intent_template_id": 364,
+      "intent": "Find the customer name and email with phone number 2137418080",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 210,
+      "site": "shopping_admin",
+      "intent_template_id": 364,
+      "intent": "Find the customer name and email with phone number 2065555555",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 211,
+      "site": "shopping_admin",
+      "intent_template_id": 364,
+      "intent": "Find the customer name and email with phone number 8015551212",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 212,
+      "site": "shopping_admin",
+      "intent_template_id": 364,
+      "intent": "Find the customer name and email with phone number 555-229-3326",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 213,
+      "site": "shopping_admin",
+      "intent_template_id": 249,
+      "intent": "What are the key aspects that the customers don't like about Antonia Racer Tank",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 214,
+      "site": "shopping_admin",
+      "intent_template_id": 249,
+      "intent": "What are the key aspects that the customers don't like about Zing Jump Rope",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 215,
+      "site": "shopping_admin",
+      "intent_template_id": 249,
+      "intent": "What are the key aspects that the customers don't like about Circe ice fleece",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 216,
+      "site": "shopping_admin",
+      "intent_template_id": 249,
+      "intent": "What are the key aspects that the customers don't like about Electra Bra Top",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 217,
+      "site": "shopping_admin",
+      "intent_template_id": 249,
+      "intent": "What are the key aspects that the customers don't like about Pursuit Tone Band",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 225,
+      "site": "shopping",
+      "intent_template_id": 135,
+      "intent": "What do customers say about brush from sephora",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 226,
+      "site": "shopping",
+      "intent_template_id": 370,
+      "intent": "What is the price range for products from Amazon basic?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 227,
+      "site": "shopping",
+      "intent_template_id": 370,
+      "intent": "What is the price range for products from EYZUTAK?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 228,
+      "site": "shopping",
+      "intent_template_id": 370,
+      "intent": "What is the price range for products from sephora?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 229,
+      "site": "shopping",
+      "intent_template_id": 370,
+      "intent": "What is the price range for products from ugreen?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 230,
+      "site": "shopping",
+      "intent_template_id": 370,
+      "intent": "What is the price range for products from Perricone MD?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 231,
+      "site": "shopping",
+      "intent_template_id": 213,
+      "intent": "Get the order number of my most recent cancelled order ",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 232,
+      "site": "shopping",
+      "intent_template_id": 213,
+      "intent": "Get the order number of my most recent pending order ",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 233,
+      "site": "shopping",
+      "intent_template_id": 213,
+      "intent": "Get the order number of my most recent complete order ",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 234,
+      "site": "shopping",
+      "intent_template_id": 213,
+      "intent": "Get the order number of my most recent on hold order ",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 235,
+      "site": "shopping",
+      "intent_template_id": 213,
+      "intent": "Get the order number of my most recent under delivery order ",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 238,
+      "site": "shopping",
+      "intent_template_id": 138,
+      "intent": "I am doing a market survey for one stop market, show me the most expensive product from PS4 accessories category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 239,
+      "site": "shopping",
+      "intent_template_id": 138,
+      "intent": "I am doing a market survey for one stop market, show me the most expensive product from nutrition bars and drinks category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 240,
+      "site": "shopping",
+      "intent_template_id": 138,
+      "intent": "I am doing a market survey for one stop market, show me the most expensive product from competitive swimwear category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 241,
+      "site": "shopping",
+      "intent_template_id": 138,
+      "intent": "I am doing a market survey for one stop market, show me the most expensive product from skin care tool category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 242,
+      "site": "shopping",
+      "intent_template_id": 138,
+      "intent": "I am doing a market survey for one stop market, show me the most expensive product from Household Supplies category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 243,
+      "site": "shopping_admin",
+      "intent_template_id": 244,
+      "intent": "Show me the email address of the customer who is the most unhappy with Circe fleece",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 244,
+      "site": "shopping_admin",
+      "intent_template_id": 244,
+      "intent": "Show me the email address of the customer who is the most unhappy with Olivia zip jacket",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 245,
+      "site": "shopping_admin",
+      "intent_template_id": 244,
+      "intent": "Show me the name of the customer who is the most unhappy with Antonia racer tank",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 246,
+      "site": "shopping_admin",
+      "intent_template_id": 244,
+      "intent": "Show me the name of the customer who is the most unhappy with Chloe tank",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 247,
+      "site": "shopping_admin",
+      "intent_template_id": 244,
+      "intent": "Show me the email address of the customer who is the most unhappy with the style of Zoe products",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 260,
+      "site": "shopping",
+      "intent_template_id": 211,
+      "intent": "I want to browse the products in the Video Game category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 261,
+      "site": "shopping",
+      "intent_template_id": 211,
+      "intent": "I want to browse the products in the Headphones category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 262,
+      "site": "shopping",
+      "intent_template_id": 211,
+      "intent": "I want to browse the products in the Men shoes category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 263,
+      "site": "shopping",
+      "intent_template_id": 211,
+      "intent": "I want to browse the products in the Woman clothing category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 264,
+      "site": "shopping",
+      "intent_template_id": 211,
+      "intent": "I want to browse the products in the Cabinets, Racks & Shelves category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 269,
+      "site": "shopping",
+      "intent_template_id": 139,
+      "intent": "Show me products under $25 in \"women shoes\" category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 270,
+      "site": "shopping",
+      "intent_template_id": 139,
+      "intent": "Show me products under $30 in \"men shoes\" category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 271,
+      "site": "shopping",
+      "intent_template_id": 139,
+      "intent": "Show me products under $46.99 in \"makeup remover\" category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 272,
+      "site": "shopping",
+      "intent_template_id": 139,
+      "intent": "Show me products under $78 in \"children dental care\" category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 273,
+      "site": "shopping",
+      "intent_template_id": 139,
+      "intent": "Show me products under $199 in \"furtiture with accent\" category",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 274,
+      "site": "shopping",
+      "intent_template_id": 212,
+      "intent": "Search for \"usb wifi\"",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 275,
+      "site": "shopping",
+      "intent_template_id": 212,
+      "intent": "Search for \"xbox\"",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 276,
+      "site": "shopping",
+      "intent_template_id": 212,
+      "intent": "Search for \"switch accessories\"",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 277,
+      "site": "shopping",
+      "intent_template_id": 212,
+      "intent": "Search for \"batteries for iphone 13\"",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 278,
+      "site": "shopping",
+      "intent_template_id": 212,
+      "intent": "Search for \"green tea bag for weight loss\"",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 279,
+      "site": "shopping",
+      "intent_template_id": 204,
+      "intent": "Provide me with the complete names of Bluetooth headphones from Sony, and also share the price range for the available models",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 280,
+      "site": "shopping",
+      "intent_template_id": 204,
+      "intent": "Provide me with the full names of chargers from Anker, and also share the price range for the available models",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 281,
+      "site": "shopping",
+      "intent_template_id": 204,
+      "intent": "Please provide me with the complete product names of Oral B brush heads designed for children, along with their corresponding price range per brush",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 282,
+      "site": "shopping",
+      "intent_template_id": 204,
+      "intent": "List the full product names of slide slippers from Nike and tell me the price range of the available products",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 283,
+      "site": "shopping",
+      "intent_template_id": 210,
+      "intent": "Look up the most recent models of XBox controllers released between 2020-2021?",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 284,
+      "site": "shopping",
+      "intent_template_id": 207,
+      "intent": "Show the least expensive shoe storage with a minimum storage capacity of 12 pairs.",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 285,
+      "site": "shopping",
+      "intent_template_id": 207,
+      "intent": "Show the least expensive switch card holder with a minimum storage capacity of 15 cards.",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 286,
+      "site": "shopping",
+      "intent_template_id": 207,
+      "intent": "Show the least expensive ssd hard drive with a minimum storage capacity of 1TB.",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 288,
+      "site": "shopping_admin",
+      "intent_template_id": 234,
+      "intent": "Tell me the name of the customer who has the most cancellations in the history",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 289,
+      "site": "shopping_admin",
+      "intent_template_id": 234,
+      "intent": "Tell me the email address, name, phone number of the customer who has the most cancellations in the history",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 290,
+      "site": "shopping_admin",
+      "intent_template_id": 234,
+      "intent": "Tell me the product SKUs in the most recent cancelled orders of the customer who has the most cancellations in the history",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 291,
+      "site": "shopping_admin",
+      "intent_template_id": 234,
+      "intent": "Tell me the total spend on products in the most recent cancelled orders of the customer who has the most cancellations in the history",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 292,
+      "site": "shopping_admin",
+      "intent_template_id": 234,
+      "intent": "Tell me the total number of cancellations of the customer who has the most cancellations in the history",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 298,
+      "site": "shopping",
+      "intent_template_id": 180,
+      "intent": "Show the most recent completed order",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 299,
+      "site": "shopping",
+      "intent_template_id": 180,
+      "intent": "Show the most recent cancelled order",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 300,
+      "site": "shopping",
+      "intent_template_id": 180,
+      "intent": "Show the most recent pending order",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 301,
+      "site": "shopping",
+      "intent_template_id": 180,
+      "intent": "Show the most recent processing order",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 302,
+      "site": "shopping",
+      "intent_template_id": 180,
+      "intent": "Show the most recent out of delivery order",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 313,
+      "site": "shopping",
+      "intent_template_id": 134,
+      "intent": "Which number to call for the customer service?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 319,
+      "site": "shopping",
+      "intent_template_id": 160,
+      "intent": "How much refund I should expect from my order canlled in April 2022, including shipping fee",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 320,
+      "site": "shopping",
+      "intent_template_id": 160,
+      "intent": "How much refund I should expect from my order canlled in Feb 2023, including shipping fee",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 321,
+      "site": "shopping",
+      "intent_template_id": 160,
+      "intent": "How much refund I should expect from my order canlled in 2022, including shipping fee",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 322,
+      "site": "shopping",
+      "intent_template_id": 160,
+      "intent": "How much refund I should expect from my order canlled in May 2023 if I cannot get the shipping fee refunded?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 323,
+      "site": "shopping",
+      "intent_template_id": 160,
+      "intent": "How much refund I should expect from my order canlled in 2022/03? I only kept the AC-DC Adapter and the shop told me that I cannot get the shipping fee back",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 324,
+      "site": "shopping",
+      "intent_template_id": 208,
+      "intent": "Show me the \"chairs\" listings by ascending price.",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 325,
+      "site": "shopping",
+      "intent_template_id": 208,
+      "intent": "Show me the \"mouth night guard\" listings by descending price.",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 326,
+      "site": "shopping",
+      "intent_template_id": 208,
+      "intent": "Show me the \"Canon photo printer\" listings by search relevance, from most to least.",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 327,
+      "site": "shopping",
+      "intent_template_id": 208,
+      "intent": "Show me the \"iphone 12 phone case\" listings by name alphabetically.",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 328,
+      "site": "shopping",
+      "intent_template_id": 208,
+      "intent": "Show me the \"iphone 12 phone case\" listings by price.",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 329,
+      "site": "shopping",
+      "intent_template_id": 147,
+      "intent": "How much I spend on 4/19/2023 on shopping at One Stop Market?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 330,
+      "site": "shopping",
+      "intent_template_id": 147,
+      "intent": "How much I spend in March 2023 on shopping at One Stop Market?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 331,
+      "site": "shopping",
+      "intent_template_id": 147,
+      "intent": "How much I spend in July 2022 on shopping at One Stop Market?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 332,
+      "site": "shopping",
+      "intent_template_id": 147,
+      "intent": "How much I spend each month from Jan to the end of March 2023 on shopping at One Stop Market?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 333,
+      "site": "shopping",
+      "intent_template_id": 147,
+      "intent": "How much did I spend on shopping at One Stop Market on November 2022? They gave me a 20% discount on the total amount for orders exceeding $200 in cash",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 334,
+      "site": "shopping",
+      "intent_template_id": 169,
+      "intent": "Tell me when I last ordered my muffin cornbread mix?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 335,
+      "site": "shopping",
+      "intent_template_id": 169,
+      "intent": "Tell me when I last ordered my body butter?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 336,
+      "site": "shopping",
+      "intent_template_id": 169,
+      "intent": "Tell me when I last ordered my conditioner?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 337,
+      "site": "shopping",
+      "intent_template_id": 169,
+      "intent": "Tell me when I last ordered my bread olive?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 338,
+      "site": "shopping",
+      "intent_template_id": 169,
+      "intent": "Tell me when I last ordered my toothpaste?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 344,
+      "site": "shopping_admin",
+      "intent_template_id": 248,
+      "intent": "How many reviews our shop received by far?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 345,
+      "site": "shopping_admin",
+      "intent_template_id": 248,
+      "intent": "How many reviews our shop received in Apr 2023?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 346,
+      "site": "shopping_admin",
+      "intent_template_id": 248,
+      "intent": "How many reviews our shop received during 2022?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 347,
+      "site": "shopping_admin",
+      "intent_template_id": 248,
+      "intent": "How many reviews our shop received from the beginning of the shop?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 348,
+      "site": "shopping_admin",
+      "intent_template_id": 248,
+      "intent": "How many reviews our shop received in May 2023?",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 351,
+      "site": "shopping",
+      "intent_template_id": 137,
+      "intent": "List products from PS4 accessories category by ascending price",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 352,
+      "site": "shopping",
+      "intent_template_id": 137,
+      "intent": "List products from nutrition bars and drinks category by ascending price",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 353,
+      "site": "shopping",
+      "intent_template_id": 137,
+      "intent": "List products from competitive swimwear category by ascending price",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 354,
+      "site": "shopping",
+      "intent_template_id": 137,
+      "intent": "List products from living room furtniture category by descending price",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 355,
+      "site": "shopping",
+      "intent_template_id": 137,
+      "intent": "List products from kids' bedding category by descending price",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 358,
+      "site": "shopping",
+      "intent_template_id": 206,
+      "intent": "Show me the shipping method for order number 187.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 359,
+      "site": "shopping",
+      "intent_template_id": 206,
+      "intent": "Show me the order date for order number 148.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 360,
+      "site": "shopping",
+      "intent_template_id": 206,
+      "intent": "Show me the product names for order number 148.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 361,
+      "site": "shopping",
+      "intent_template_id": 206,
+      "intent": "Show me the order statuses for order number 170 and 189.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 362,
+      "site": "shopping",
+      "intent_template_id": 206,
+      "intent": "Show me the billing address for order number 00178.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 368,
+      "site": "shopping",
+      "intent_template_id": 188,
+      "intent": "find discounted items.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 374,
+      "site": "shopping_admin",
+      "intent_template_id": 266,
+      "intent": "Preview the Magento Blank theme for my shop",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 375,
+      "site": "shopping_admin",
+      "intent_template_id": 266,
+      "intent": "Preview the Magento Luma theme for my shop",
+      "eval_types": [
+        "url_match"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 376,
+      "site": "shopping",
+      "intent_template_id": 182,
+      "intent": "Summarize customer reviews for Amazon Echo Dot 3rd generation.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 384,
+      "site": "shopping",
+      "intent_template_id": 666,
+      "intent": "List the customer names who complain about the quality of EYZUTAK phone cases",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 385,
+      "site": "shopping",
+      "intent_template_id": 666,
+      "intent": "List the customer names who thinks EYZUTAK phone cases are of good looking",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 386,
+      "site": "shopping",
+      "intent_template_id": 1355,
+      "intent": "What is the rating of Ugreen lightning to 3.5mm cable. Please round to the nearest whole number",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 387,
+      "site": "shopping",
+      "intent_template_id": 1356,
+      "intent": "Who gave 4 or 5 stars for phone cases from EYZUTAK",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 388,
+      "site": "shopping",
+      "intent_template_id": 1356,
+      "intent": "Who gave 1 or 2 stars for phone cases from EYZUTAK",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 423,
+      "site": "shopping_admin",
+      "intent_template_id": 237,
+      "intent": "Mark all Hollister shirts on sale",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 431,
+      "site": "shopping",
+      "intent_template_id": 145,
+      "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 432,
+      "site": "shopping",
+      "intent_template_id": 145,
+      "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 433,
+      "site": "shopping",
+      "intent_template_id": 145,
+      "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 434,
+      "site": "shopping",
+      "intent_template_id": 145,
+      "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 435,
+      "site": "shopping",
+      "intent_template_id": 145,
+      "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 436,
+      "site": "shopping",
+      "intent_template_id": 156,
+      "intent": "I previously ordered some a mattress foundation around Feb or March 2023 and later cancelled. Can you reorder it for me?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 437,
+      "site": "shopping",
+      "intent_template_id": 156,
+      "intent": "I previously ordered some a table lamp in May 2023 and later cancelled. Can you reorder it for me?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 438,
+      "site": "shopping",
+      "intent_template_id": 156,
+      "intent": "I previously ordered some a TV stand sometime around sep 2022 and later cancelled. Can you reorder it for me?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 439,
+      "site": "shopping",
+      "intent_template_id": 156,
+      "intent": "I previously ordered some a cat t-shirt during 2022 and later cancelled. Can you reorder it for me?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 440,
+      "site": "shopping",
+      "intent_template_id": 156,
+      "intent": "I previously ordered some a make up removal kit during summer 2022 and later cancelled. Can you reorder it for me?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 453,
+      "site": "shopping_admin",
+      "intent_template_id": 242,
+      "intent": "Disable Teton pullover hoodie from the site, they are facing some quality issues.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 454,
+      "site": "shopping_admin",
+      "intent_template_id": 242,
+      "intent": "Disable Ryker Tee Crew Neck from the site, they are facing some quality issues.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 455,
+      "site": "shopping_admin",
+      "intent_template_id": 242,
+      "intent": "Disable lHelios Endurance Tank from the site, they are facing some quality issues.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 456,
+      "site": "shopping_admin",
+      "intent_template_id": 242,
+      "intent": "Disable Cora Pant from the site, they are facing some quality issues.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 457,
+      "site": "shopping_admin",
+      "intent_template_id": 242,
+      "intent": "Disable Karmen yoga pants from the site, they are facing some quality issues.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 458,
+      "site": "shopping_admin",
+      "intent_template_id": 247,
+      "intent": "Reduce the price of this product by $5",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 459,
+      "site": "shopping_admin",
+      "intent_template_id": 247,
+      "intent": "Reduce the price of this product by 10%",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 460,
+      "site": "shopping_admin",
+      "intent_template_id": 247,
+      "intent": "Reduce the price of this product by 15%",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 461,
+      "site": "shopping_admin",
+      "intent_template_id": 247,
+      "intent": "Increase the price of this product by $11.5",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 462,
+      "site": "shopping_admin",
+      "intent_template_id": 247,
+      "intent": "Increase the price of this product by 10%",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 463,
+      "site": "shopping_admin",
+      "intent_template_id": 247,
+      "intent": "Increase the price of this product by 15%",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 464,
+      "site": "shopping_admin",
+      "intent_template_id": 251,
+      "intent": "Update the product description of Antonia Racer Tank to highlight the real user positive reviews by quoting the comments",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 465,
+      "site": "shopping",
+      "intent_template_id": 186,
+      "intent": "Add Tide PODS Spring Meadow Scent HE Turbo Laundry Detergent Pacs, 81 Count to my wish list",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 466,
+      "site": "shopping",
+      "intent_template_id": 186,
+      "intent": "Add 2 Hawaiian Bamboo Orchid Roots #zc50 - by Discount Hawaiian Gifts to my wish list",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 467,
+      "site": "shopping",
+      "intent_template_id": 186,
+      "intent": "Add HONGJ Hawaiian Beach Outfits Set for Mens, Summer Tropical Tree Printed Relaxed-fit Hawaii Shirts Shorts 2 Piece Suits to my wish list",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 468,
+      "site": "shopping",
+      "intent_template_id": 186,
+      "intent": "Add DkRgVNY Lace Spcling Lingerie Womens Sexy Hollow Out Underwear Bodysuit One Piece Snap Crotch Clubwear Teddy Bodysuit to my wish list",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 469,
+      "site": "shopping",
+      "intent_template_id": 186,
+      "intent": "Add Light Blue Simple Summer New Low Heels Slippers for Women Fashion Chunky Heels Pointed Toe Wine Glasses Sandals Comfortable Walking Shoes Ladies All-Match Sexy Party Shoes to my wish list",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 470,
+      "site": "shopping_admin",
+      "intent_template_id": 257,
+      "intent": "Cancel order 302",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 471,
+      "site": "shopping_admin",
+      "intent_template_id": 257,
+      "intent": "Cancel order 307",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 472,
+      "site": "shopping_admin",
+      "intent_template_id": 257,
+      "intent": "Cancel order 299",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 473,
+      "site": "shopping_admin",
+      "intent_template_id": 257,
+      "intent": "Cancel order 301",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 474,
+      "site": "shopping_admin",
+      "intent_template_id": 257,
+      "intent": "Cancel order 305",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 486,
+      "site": "shopping_admin",
+      "intent_template_id": 275,
+      "intent": "Change the page title of \"404 Not Found\" page on my site to \"Bruh bro you clicked the wrong page\".",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 487,
+      "site": "shopping_admin",
+      "intent_template_id": 275,
+      "intent": "Change the page title of \"Enable Cookies\" page on my site to \"Cookie monster coming to your place\".",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 488,
+      "site": "shopping_admin",
+      "intent_template_id": 275,
+      "intent": "Change the page title of \"Home Page\" page on my site to \"This is the home page!! Leave here!!\".",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 489,
+      "site": "shopping_admin",
+      "intent_template_id": 275,
+      "intent": "Change the page title of \"Privacy Policy\" page on my site to \"No privacy policy is needed is this dystopian world\".",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 490,
+      "site": "shopping_admin",
+      "intent_template_id": 275,
+      "intent": "Change the page title of \"About us\" page on my site to \"Secret\".",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 491,
+      "site": "shopping_admin",
+      "intent_template_id": 280,
+      "intent": "Notify Sarah Miller in their most recent pending order with message \"the order is ready to be shipped soon!\"",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 492,
+      "site": "shopping_admin",
+      "intent_template_id": 280,
+      "intent": "Notify Jane Doe in their most recent pending order with message \"sorry we are out of stock, please reorder\"",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 493,
+      "site": "shopping_admin",
+      "intent_template_id": 280,
+      "intent": "Notify Grace Nguyen in their most recent pending order with message \"sorry we are bankrupt, please contact our customer service for refund\"",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 494,
+      "site": "shopping_admin",
+      "intent_template_id": 280,
+      "intent": "Notify Alex Thomas in their most recent pending order with message \"Yo, your order will be shipped soon!\"",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 495,
+      "site": "shopping_admin",
+      "intent_template_id": 280,
+      "intent": "Notify Lily Potter in their most recent pending order with message \"Thanks, your order is ready to be shipped!\"",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 496,
+      "site": "shopping_admin",
+      "intent_template_id": 284,
+      "intent": "Update order #299 with the Federal Express tracking number 8974568499",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 497,
+      "site": "shopping_admin",
+      "intent_template_id": 284,
+      "intent": "Update order #307 with the DHL tracking number 24353446464",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 498,
+      "site": "shopping_admin",
+      "intent_template_id": 284,
+      "intent": "Update order #306 with the UPS tracking number 55591023930",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 499,
+      "site": "shopping_admin",
+      "intent_template_id": 284,
+      "intent": "Update order #304 with the USPS tracking number 13849373987",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 500,
+      "site": "shopping_admin",
+      "intent_template_id": 284,
+      "intent": "Update order #301 with the DHL tracking number 239028439840",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 501,
+      "site": "shopping_admin",
+      "intent_template_id": 287,
+      "intent": "Make all Taurus Elements Shell as out of stock",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 502,
+      "site": "shopping_admin",
+      "intent_template_id": 287,
+      "intent": "Make all Gobi HeatTec Tee as out of stock",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 503,
+      "site": "shopping_admin",
+      "intent_template_id": 287,
+      "intent": "Make all rocco gym tank as out of stock",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 504,
+      "site": "shopping_admin",
+      "intent_template_id": 287,
+      "intent": "Make all Selene yoga hoodie as out of stock",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 505,
+      "site": "shopping_admin",
+      "intent_template_id": 287,
+      "intent": "Make all Aeno capri as out of stock",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 506,
+      "site": "shopping",
+      "intent_template_id": 172,
+      "intent": "Buy the highest rated product from the meat substitute category within a budget between 100 and 200.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 507,
+      "site": "shopping",
+      "intent_template_id": 172,
+      "intent": "Buy the highest rated product from the Ceiling light category within a budget above 1000.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 508,
+      "site": "shopping",
+      "intent_template_id": 172,
+      "intent": "Buy the highest rated product from the NS switch pouch category within a budget under 60.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 509,
+      "site": "shopping",
+      "intent_template_id": 216,
+      "intent": "Buy the best rating product from \"Men's shoe\" category with at least 5 reviews and the product is least expensive",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 510,
+      "site": "shopping",
+      "intent_template_id": 216,
+      "intent": "Buy the best rating product from \"Home Audio Speaker\" category with at least 5 reviews and the product is least expensive",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 511,
+      "site": "shopping",
+      "intent_template_id": 189,
+      "intent": "Add a laundry detergent to my wish list.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 512,
+      "site": "shopping",
+      "intent_template_id": 189,
+      "intent": "Add a toothpaste to my wish list.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 513,
+      "site": "shopping",
+      "intent_template_id": 189,
+      "intent": "Add a chair to my wish list.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 514,
+      "site": "shopping",
+      "intent_template_id": 189,
+      "intent": "Add a white desk to my wish list.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 515,
+      "site": "shopping",
+      "intent_template_id": 189,
+      "intent": "Add a white computer desk to my wish list.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 516,
+      "site": "shopping",
+      "intent_template_id": 196,
+      "intent": "Add this product to my wishlist",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 517,
+      "site": "shopping",
+      "intent_template_id": 196,
+      "intent": "Add this product to my wishlist",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 518,
+      "site": "shopping",
+      "intent_template_id": 196,
+      "intent": "Add this product to my wishlist",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 519,
+      "site": "shopping",
+      "intent_template_id": 196,
+      "intent": "Add this product to my wishlist",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 520,
+      "site": "shopping",
+      "intent_template_id": 196,
+      "intent": "Add this product to my wishlist",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 521,
+      "site": "shopping",
+      "intent_template_id": 199,
+      "intent": "Subscribe to the newsletter of OneStopMarket",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 528,
+      "site": "shopping",
+      "intent_template_id": 154,
+      "intent": "Draft a refund message via their \"contact us\" form for the phone screen protector I bought March 2023. It broke after three days of use. The shop requires the order id, the reason and the amount to refund in the message. Don't submit yet",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 529,
+      "site": "shopping",
+      "intent_template_id": 154,
+      "intent": "Draft a refund message via their \"contact us\" form for the bluetooth speaker I bought Feb 2023. It broke after three days of use. The shop requires the order id, the reason and the amount to refund in the message. Don't submit yet",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 530,
+      "site": "shopping",
+      "intent_template_id": 154,
+      "intent": "Draft a refund message via their \"contact us\" form for the kitchen organizer I bought around Feb 2023. It broke after three days of use. The shop requires the order id, the reason and the amount to refund in the message. Don't submit yet",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 531,
+      "site": "shopping",
+      "intent_template_id": 154,
+      "intent": "Draft a refund message via their \"contact us\" form for the phone case I bought March 2023. It broke after three days of use. The shop requires the order id, the reason and the amount to refund in the message. Don't submit yet",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 532,
+      "site": "shopping",
+      "intent_template_id": 154,
+      "intent": "Draft a refund message via their \"contact us\" form for the PS3 remote controller I bought early 2023. It broke after three days of use. The shop requires the order id, the reason and the amount to refund in the message. Don't submit yet",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 538,
+      "site": "shopping_admin",
+      "intent_template_id": 240,
+      "intent": "Modify the address of order #299 to 456 Oak Avenue, Apartment 5B, New York, NY, 10001",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 539,
+      "site": "shopping_admin",
+      "intent_template_id": 240,
+      "intent": "Modify the address of order #65 to 789 Pine Lane, San Francisco, CA, 94102",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 540,
+      "site": "shopping_admin",
+      "intent_template_id": 240,
+      "intent": "Modify the address of order #301 to 321 Birch Boulevard, Suite 200, Dallas, TX, 75201",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 541,
+      "site": "shopping_admin",
+      "intent_template_id": 240,
+      "intent": "Modify the address of order #125 to 654 Elm Drive, Apartment 12, Miami, FL, 33101",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 542,
+      "site": "shopping_admin",
+      "intent_template_id": 240,
+      "intent": "Modify the address of order #300 to 987 Cedar Court, Los Angeles, CA, 90012",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 543,
+      "site": "shopping_admin",
+      "intent_template_id": 251,
+      "intent": "Update the product description of Bella Tank to highlight the real user positive reviews by quoting the comments",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 544,
+      "site": "shopping_admin",
+      "intent_template_id": 251,
+      "intent": "Update the description of Selena Yoga Hoodie to highlight the real user positive reviews by quoting the comments",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 545,
+      "site": "shopping_admin",
+      "intent_template_id": 251,
+      "intent": "Update the description of Radiant Tee to highlight the real user positive reviews by quoting the comments",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 546,
+      "site": "shopping_admin",
+      "intent_template_id": 251,
+      "intent": "Update the description of Lucia Cross-Fit Bra to highlight the real user positive reviews by quoting the comments",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 547,
+      "site": "shopping_admin",
+      "intent_template_id": 252,
+      "intent": "Add a new color option brown to the size S of Phoebe Zipper Sweatshirt",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 548,
+      "site": "shopping_admin",
+      "intent_template_id": 252,
+      "intent": "Add a new color blue to size S and M of Frankie Sweatshirt",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 549,
+      "site": "shopping_admin",
+      "intent_template_id": 252,
+      "intent": "Add a new size XXXL to green Minerva LumaTech V-Tee",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 550,
+      "site": "shopping_admin",
+      "intent_template_id": 252,
+      "intent": "Add a new size XXS to blue and purple Nona Fitness Tank",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 551,
+      "site": "shopping_admin",
+      "intent_template_id": 252,
+      "intent": "Add new size 30 and 31 to all color variants of Diana Tights",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 571,
+      "site": "shopping",
+      "intent_template_id": 165,
+      "intent": "I recently moved, my address is 231 Willow Way, Suite 100, Chicago, IL, 60601, update my information on OneStopShopping accordingly",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 572,
+      "site": "shopping",
+      "intent_template_id": 165,
+      "intent": "I recently moved, my address is 654 Aspen Road, House #3, Boston, MA, 02110, update my information on OneStopShopping accordingly",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 573,
+      "site": "shopping",
+      "intent_template_id": 165,
+      "intent": "I recently moved, my address is 987 Sycamore Circle, Philadelphia, PA, 19102, update my information on OneStopShopping accordingly",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 574,
+      "site": "shopping",
+      "intent_template_id": 165,
+      "intent": "I recently moved, my address is 111 Magnolia Path, Atlanta, GA, 30303, update my information on OneStopShopping accordingly",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 575,
+      "site": "shopping",
+      "intent_template_id": 165,
+      "intent": "I recently moved, my address is 222 Redwood Rise, Suite 300, Seattle, WA, 98101, update my information on OneStopShopping accordingly",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 585,
+      "site": "shopping",
+      "intent_template_id": 194,
+      "intent": "Rate my recent purchase of floor lamp with 5 stars, using my nickname Emma Lopez?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 586,
+      "site": "shopping",
+      "intent_template_id": 194,
+      "intent": "Rate my recent purchase of Jiffy Corn Muffin Cornbread Mix with 4 stars, using my nickname ShoppingEmma?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 587,
+      "site": "shopping",
+      "intent_template_id": 194,
+      "intent": "Rate my recent purchase of PS3 Remote Controllers with 3 stars, using my nickname GamingEmma?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 588,
+      "site": "shopping",
+      "intent_template_id": 194,
+      "intent": "Rate my recent purchase of Foundation For Mattress With Frame Set with 1 stars, using my nickname ShoppingEmma?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 589,
+      "site": "shopping",
+      "intent_template_id": 194,
+      "intent": "Rate my recent purchase of Mini Wireless Bluetooth Speaker with 2 stars, using my nickname SimpleEmma?",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 653,
+      "site": "shopping",
+      "intent_template_id": 153,
+      "intent": "Fill the \"contact us\" form in the site for a refund on the phone screen protector I bought, stating that it broke after just three days of use. Also, ensure to include the order number #000000180 and the product SKU. Don't submit yet, I will check.",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 654,
+      "site": "shopping",
+      "intent_template_id": 153,
+      "intent": "Fill the \"contact us\" form in the site for a refund on the bluetooth speaker I bought, stating that it broke after just three days of use. Also, ensure to include the order number #161 and the product SKU. Don't submit yet, I will check.",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 655,
+      "site": "shopping",
+      "intent_template_id": 153,
+      "intent": "Fill the \"contact us\" form in the site for a refund on the iphone case I bought, stating that it broke after just three days of use. Also, ensure to include the order number #180 and the product SKU. Don't submit yet, I will check.",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 656,
+      "site": "shopping",
+      "intent_template_id": 153,
+      "intent": "Fill the \"contact us\" form in the site for a refund on the remote controller I bought, stating that it broke after just three days of use. Also, ensure to include the order number #180 and the product SKU. Don't submit yet, I will check.",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 657,
+      "site": "shopping",
+      "intent_template_id": 153,
+      "intent": "Fill the \"contact us\" form in the site for a refund on the speaker I bought, stating that it broke after just three days of use. Also, ensure to include the order number #148 and the product SKU. Don't submit yet, I will check.",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 676,
+      "site": "shopping_admin",
+      "intent_template_id": 253,
+      "intent": "Lookup orders that are suspected of being fraudulent",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 677,
+      "site": "shopping_admin",
+      "intent_template_id": 253,
+      "intent": "Lookup orders that are processing",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 678,
+      "site": "shopping_admin",
+      "intent_template_id": 253,
+      "intent": "Lookup orders that are canceled",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 679,
+      "site": "shopping_admin",
+      "intent_template_id": 253,
+      "intent": "Lookup orders that are completed",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 680,
+      "site": "shopping_admin",
+      "intent_template_id": 253,
+      "intent": "Lookup orders that are on hold",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 689,
+      "site": "shopping",
+      "intent_template_id": 163,
+      "intent": "Draft an email to the shop owner via their contact us function for a coupon as I am a loyal customer",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 690,
+      "site": "shopping",
+      "intent_template_id": 163,
+      "intent": "Draft an email to the shop owner via their contact us function for a coupon as they promised me a coupon last time",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 691,
+      "site": "shopping",
+      "intent_template_id": 163,
+      "intent": "Draft an email to the shop owner via their contact us function for a coupon as I plan to make a bulk purchase",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 692,
+      "site": "shopping",
+      "intent_template_id": 163,
+      "intent": "Draft an email to the shop owner via their contact us function for a coupon as I am a student",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 693,
+      "site": "shopping",
+      "intent_template_id": 163,
+      "intent": "Draft an email to the shop owner via their contact us function for a coupon as my refund is suppoed to be replaced by a coupon",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 694,
+      "site": "shopping_admin",
+      "intent_template_id": 256,
+      "intent": "Add a simple product named Energy-Bulk Women Shirt with 50 in stock, available in size S and color blue, priced at $60",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 695,
+      "site": "shopping_admin",
+      "intent_template_id": 256,
+      "intent": "Add a simple product named Energy-Bulk Man Yoga Pant with 50 in stock, available in size 38 and color yellow, priced at $69.99",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 696,
+      "site": "shopping_admin",
+      "intent_template_id": 256,
+      "intent": "Add a simple product named FancyBoy Man Causal Jeans with 42 in stock, available in size 34 and color Blue, priced at $169.99",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 697,
+      "site": "shopping_admin",
+      "intent_template_id": 256,
+      "intent": "Add a simple product named Swaatch Smart Watch with 42 in stock, available in size uni-size and color Blue, priced at $769.99",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 698,
+      "site": "shopping_admin",
+      "intent_template_id": 256,
+      "intent": "Add a simple product named Lelelumon Yoga Mat with 42 in stock, available in size uni-size and color black, priced at $769.99",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 699,
+      "site": "shopping_admin",
+      "intent_template_id": 258,
+      "intent": "Draft a new marketing price rule for spring sale that offers a 20 percent discount site-wide for all customers",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 700,
+      "site": "shopping_admin",
+      "intent_template_id": 258,
+      "intent": "Draft a new marketing price rule for fall discount that offers $10 discount on checkout for all customers",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 701,
+      "site": "shopping_admin",
+      "intent_template_id": 258,
+      "intent": "Draft a new marketing price rule for Mother's day sale that offers $15 discount on checkout for all customers",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 702,
+      "site": "shopping_admin",
+      "intent_template_id": 258,
+      "intent": "Draft a new marketing price rule for Pride Month that offers 45% off on all products for all customers",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 703,
+      "site": "shopping_admin",
+      "intent_template_id": 258,
+      "intent": "Draft a new marketing price rule for Thanks giving sale that offers $40 discount on checkout for all customers",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "queue",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 704,
+      "site": "shopping_admin",
+      "intent_template_id": 268,
+      "intent": "Today is 3/15/2023, generate a sales order report for last month",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 705,
+      "site": "shopping_admin",
+      "intent_template_id": 268,
+      "intent": "Today is 3/15/2023, generate a sales order report over the last 45 days",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 706,
+      "site": "shopping_admin",
+      "intent_template_id": 268,
+      "intent": "Today is 3/15/2023, generate a refund report for Q1",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 707,
+      "site": "shopping_admin",
+      "intent_template_id": 268,
+      "intent": "Today is 3/15/2023, generate a sales order report for last year",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 708,
+      "site": "shopping_admin",
+      "intent_template_id": 268,
+      "intent": "Today is 3/15/2023, generate a tax report for this year",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 709,
+      "site": "shopping_admin",
+      "intent_template_id": 271,
+      "intent": "Create an orders report from beginning of May 2021 to end of March 2022",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 710,
+      "site": "shopping_admin",
+      "intent_template_id": 271,
+      "intent": "Create a shipping report from 08/05/2022 to 03/01/2023",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 711,
+      "site": "shopping_admin",
+      "intent_template_id": 271,
+      "intent": "Create a product view report from 07/05/2021 to 05/31/2023",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 712,
+      "site": "shopping_admin",
+      "intent_template_id": 271,
+      "intent": "Create a coupons report from 05/01/2021 to 05/15/2023",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 713,
+      "site": "shopping_admin",
+      "intent_template_id": 271,
+      "intent": "Create a best sellers report from 05/01/2022 to 05/31/2023",
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "mutable_components": [],
+      "exclusions": [
+        "mail",
+        "media",
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 768,
+      "site": "shopping_admin",
+      "intent_template_id": 241,
+      "intent": "5 blue Cronus yoga pants with size 33 arrived, update the stock",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 769,
+      "site": "shopping_admin",
+      "intent_template_id": 241,
+      "intent": "We've received 378 brown Aero daily fitness tee in every size, please update the inventory.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 770,
+      "site": "shopping_admin",
+      "intent_template_id": 241,
+      "intent": "We've received 12 white Cora parachute pant of size 28 and 56 blue of size 29, update the inventory.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 771,
+      "site": "shopping_admin",
+      "intent_template_id": 243,
+      "intent": "Approve the positive reviews to display in our store.",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 772,
+      "site": "shopping_admin",
+      "intent_template_id": 246,
+      "intent": "Delete all pending negative reviews for Circe fleece",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 773,
+      "site": "shopping_admin",
+      "intent_template_id": 246,
+      "intent": "Delete all pending negative reviews",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 774,
+      "site": "shopping_admin",
+      "intent_template_id": 246,
+      "intent": "Delete all pending reviews with less than 4 stars",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 775,
+      "site": "shopping_admin",
+      "intent_template_id": 246,
+      "intent": "Delete all reviews from the scammer Arden",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 776,
+      "site": "shopping_admin",
+      "intent_template_id": 246,
+      "intent": "Delete all reviews from the scammer Carlo",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 777,
+      "site": "shopping_admin",
+      "intent_template_id": 742,
+      "intent": "Reduce the price of green Hollister backyard sweater in all size by $5",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 778,
+      "site": "shopping_admin",
+      "intent_template_id": 742,
+      "intent": "Reduce the price of size 28 Sahara leggings by 13.5%",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 779,
+      "site": "shopping_admin",
+      "intent_template_id": 742,
+      "intent": "Reduce the price of yellow shirts from Gwyn Endurance in all size below L by 15%",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 780,
+      "site": "shopping_admin",
+      "intent_template_id": 742,
+      "intent": "Increase the price of white Ingrid Running with size L and above by $17",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 781,
+      "site": "shopping_admin",
+      "intent_template_id": 742,
+      "intent": "Increase the price of black fitness tshirts from Desiree with size XS by 37%",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 782,
+      "site": "shopping_admin",
+      "intent_template_id": 742,
+      "intent": "Increase the price of all blue running tshirts in extra small and small sizes by 23%",
+      "eval_types": [
+        "program_html"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 790,
+      "site": "shopping_admin",
+      "intent_template_id": 246,
+      "intent": "Delete all negative reviews for Sybil running short",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "mysql",
+        "opensearch",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 792,
+      "site": "shopping",
+      "intent_template_id": 172,
+      "intent": "Buy the highest rated product from the Beauty & Personal Care category within a budget under 20.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 793,
+      "site": "shopping",
+      "intent_template_id": 172,
+      "intent": "Buy the highest rated product from the Men clothing category within a budget above 50 but under 129.99.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache",
+        "sessions"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 794,
+      "site": "shopping",
+      "intent_template_id": 191,
+      "intent": "Change the delivery address for my most recent order to 4000 Forbes Ave, Pittsburgh, PA.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 795,
+      "site": "shopping",
+      "intent_template_id": 191,
+      "intent": "Change the delivery address for my most recent order to 6726 McPherson Blvd, Pittsburgh, PA.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 796,
+      "site": "shopping",
+      "intent_template_id": 191,
+      "intent": "Change the delivery address for my most recent order to 155 5th Street, San Francisco, CA.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 797,
+      "site": "shopping",
+      "intent_template_id": 191,
+      "intent": "Change the delivery address for my most recent order to 3 Oxford St, Cambridge, MA.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    },
+    {
+      "task_id": 798,
+      "site": "shopping",
+      "intent_template_id": 191,
+      "intent": "Change the delivery address for my most recent order to 77 Massachusetts Ave, Cambridge, MA.",
+      "eval_types": [
+        "string_match"
+      ],
+      "mutable_components": [
+        "mysql",
+        "queue",
+        "redis_cache"
+      ],
+      "exclusions": [
+        "mail",
+        "media",
+        "opensearch",
+        "sessions"
+      ],
+      "review_status": "intent_template_reviewed"
+    }
+  ]
+}

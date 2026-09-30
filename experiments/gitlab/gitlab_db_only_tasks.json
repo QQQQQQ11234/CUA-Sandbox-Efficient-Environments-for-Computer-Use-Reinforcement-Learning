@@ -1,0 +1,431 @@
+{
+  "selection_policy": "Conservative DB-state subset; manually review before publication.",
+  "task_count": 25,
+  "tasks": [
+    {
+      "task_id": 418,
+      "category": "user_status",
+      "intent": "Set my gitlab status as Busy.",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 419,
+      "category": "user_status",
+      "intent": "Set my gitlab status as Enjoying life.",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 420,
+      "category": "user_status",
+      "intent": "Set my gitlab status as Playing Badminton.",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 421,
+      "category": "user_status",
+      "intent": "Set my gitlab status as Resting due to leg injury.",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 422,
+      "category": "user_status",
+      "intent": "Set my gitlab status as Out of Office.",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 446,
+      "category": "issue_assignee",
+      "intent": "Assign the issue regarding 404 in a11yproject to Roshanjossey.",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 447,
+      "category": "issue_assignee",
+      "intent": "Assign the issue regarding linking to an accessibility statement in a11y-webring.club to Rohan.",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 480,
+      "category": "project_member",
+      "intent": "Invite yjlou as collaborator to solarized-prism-theme",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 523,
+      "category": "project_star",
+      "intent": "Star the top five most stared repos in Gitlab",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 524,
+      "category": "project_star",
+      "intent": "Star the top eight most stared repos in Gitlab",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 525,
+      "category": "project_star",
+      "intent": "Star the top four most stared repos in Gitlab",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 526,
+      "category": "project_star",
+      "intent": "Star the top three most stared repos in Gitlab",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 527,
+      "category": "project_star",
+      "intent": "Star the top one most stared repos in Gitlab",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 533,
+      "category": "user_follow",
+      "intent": "Follow ['convexegg', 'yjlou'] on Gitlab",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 534,
+      "category": "user_follow",
+      "intent": "Follow ['Jakub Klinkovsk\u00fd', 'Koushik', 'Vinta Chen'] on Gitlab",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 535,
+      "category": "user_follow",
+      "intent": "Follow ['Jakub K', 'ghost', 'Beno\u00eet Blanchon'] on Gitlab",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 536,
+      "category": "user_follow",
+      "intent": "Follow ['ghost', 'R1kk3r', 'Abishek'] on Gitlab",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 537,
+      "category": "user_follow",
+      "intent": "Follow ['Jakub Klinkovsk', 'convexegg', 'Vinta Chen', 'yjlou', 'Abishek S'] on Gitlab",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 567,
+      "category": "project_member",
+      "intent": "Invite Jakub Klinkovsk\u00fd and Beno\u00eet Blanchon as collaborator to gimmiethat.space repo",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 568,
+      "category": "project_member",
+      "intent": "Invite Abishek and Vinta as collaborator to a11yproject.com repo",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 569,
+      "category": "project_member",
+      "intent": "Invite Beno\u00eet and Abishek as collaborator to my HTML5 markup extention repo",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 570,
+      "category": "project_member",
+      "intent": "Invite Jakub K, Alex Dills, Alex Hutnik and Beno\u00eet Blanchon as collaborator to my time tracking tool project repo",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 804,
+      "category": "issue_assignee",
+      "intent": "Assign the issue regarding flash alerts to myself and primer.",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 810,
+      "category": "issue_assignee",
+      "intent": "Assign the issue regarding flash alert in primer design guide repo to myself.",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    },
+    {
+      "task_id": 811,
+      "category": "issue_assignee",
+      "intent": "Assign the issue regarding 404 in a11yproject to myself.",
+      "mutable_components": [
+        "postgresql"
+      ],
+      "exclusions": [
+        "gitaly",
+        "redis",
+        "sidekiq",
+        "uploads",
+        "artifacts",
+        "opensearch"
+      ],
+      "review_status": "conservative_auto_selected"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "app": "gitlab",
+  "scope": "WebArena GitLab CE 15.7.5 shared-runtime inference backend",
+  "components": [
+    {
+      "name": "postgresql",
+      "state_class": "authoritative",
+      "strategy": "per_environment_database_clone",
+      "status": "implemented",
+      "reset": "replace from gitlab_base_template",
+      "fork": "clone checkpoint database",
+      "notes": "Route freeze and HTTP drain precede clone operations."
+    },
+    {
+      "name": "gitaly",
+      "state_class": "authoritative",
+      "strategy": "request_routed_relative_path_with_reflink_snapshot",
+      "status": "implemented",
+      "reset": "replace routed repository tree from immutable reflink base",
+      "fork": "reflink checkpoint repository tree into target branch",
+      "notes": "GitLab 15.7.5 uses request-routed Gitaly relative paths and XFS reflink snapshots. Two-environment commit/checkpoint/fork/reset isolation and task 411 evaluator reward 1.0 are validated."
+    },
+    {
+      "name": "uploads",
+      "state_class": "authoritative",
+      "strategy": "request_routed_uploader_root_with_reflink_snapshot",
+      "status": "implemented",
+      "reset": "replace routed upload tree from immutable reflink base",
+      "fork": "reflink checkpoint upload tree into target branch",
+      "notes": "GitLabUploader and subclass roots are request-routed to reflink branch trees. A two-environment real project-upload, fork, and reset smoke passes."
+    },
+    {
+      "name": "artifacts",
+      "state_class": "authoritative",
+      "strategy": "request_routed_uploader_root_with_reflink_snapshot",
+      "status": "implemented",
+      "reset": "replace routed artifact tree from immutable reflink base",
+      "fork": "reflink checkpoint artifact tree into target branch",
+      "notes": "JobArtifactUploader is request-routed to a reflink branch tree. Two-environment write/read/fork/reset isolation passes."
+    },
+    {
+      "name": "redis",
+      "state_class": "authoritative",
+      "strategy": "branch_namespaced_state_and_generation_namespaced_cache",
+      "status": "implemented",
+      "reset": "delete branch state/cache prefixes and restore immutable base state",
+      "fork": "restore authoritative key dump into child branch; start empty generation cache",
+      "notes": "GitLab 15.7.5 SharedState, Sessions, TraceChunks, Cache, RateLimiting, and Rails cache consumers are routed through branch/generation namespaces. Concurrent namespace and reset/fork smoke passes."
+    },
+    {
+      "name": "sidekiq",
+      "state_class": "authoritative",
+      "strategy": "route_claimed_shared_queue_and_drain_barrier",
+      "status": "implemented",
+      "reset": "freeze HTTP, drain counted immediate jobs, remove routed scheduled jobs",
+      "fork": "drain parent jobs before activating the child route",
+      "notes": "Immediate jobs carry route claims, execute in the routed DB/Redis/Gitaly context, and are counted by the lifecycle/evaluator drain barrier. Two-environment worker and evaluator-drain smoke passes."
+    },
+    {
+      "name": "opensearch",
+      "state_class": "derived",
+      "strategy": "disabled_and_boot_asserted_for_ce_15_7_5",
+      "status": "implemented",
+      "reset": "verify advanced search remains disabled",
+      "fork": "verify advanced search remains disabled",
+      "notes": "The exact WebArena GitLab CE 15.7.5 image has elasticsearch_search=false and elasticsearch_indexing=false. Shared mode fails boot if either is enabled; a future image with advanced search requires per-branch indexes and rebuilds."
+    }
+  ]
+}

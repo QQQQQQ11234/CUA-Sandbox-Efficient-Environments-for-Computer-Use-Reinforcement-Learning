@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use CUA-Sandbox, please cite the following paper."
+title: "CUA-Sandbox: Efficient Environments for Computer-Use Agent Reinforcement Learning"
+type: software
+license: MIT
+url: "https://arxiv.org/abs/2609.32750"
+authors:
+  - family-names: Yan
+    given-names: Xin
+  - family-names: Jiao
+    given-names: Zhengbo
+  - family-names: Liu
+    given-names: Jiaqi
+  - family-names: Wan
+    given-names: Zhenglin
+  - family-names: Ma
+    given-names: SiYuan
+  - family-names: Yu
+    given-names: Xuliang
+  - family-names: Jiang
+    given-names: Tianyi
+  - family-names: Zhang
+    given-names: Chubin
+  - family-names: Zhou
+    given-names: Pengfei
+  - family-names: Zhao
+    given-names: Wangbo
+  - family-names: Yu
+    given-names: Xingrui
+  - family-names: An
+    given-names: Bo
+  - family-names: You
+    given-names: Yang
+  - family-names: Tsang
+    given-names: Ivor

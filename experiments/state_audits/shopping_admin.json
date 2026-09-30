@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "app": "shopping_admin",
+  "scope": "WebArena Magento admin shared-runtime inference backend",
+  "components": [
+    {
+      "name": "mysql",
+      "state_class": "authoritative",
+      "strategy": "quiesced_datadir_xfs_reflink_branch_with_one_active_host_mysqld",
+      "status": "implemented",
+      "reset": "replace active datadir from immutable Magento template",
+      "fork": "reflink cold checkpoint datadir into target branch"
+    },
+    {
+      "name": "media",
+      "state_class": "authoritative",
+      "strategy": "immutable_shared_baseline_with_request_routed_branch_delta",
+      "status": "unsupported",
+      "reset": "discard branch delta; immutable baseline remains shared",
+      "fork": "reflink checkpoint branch delta",
+      "notes": "All reviewed Admin tasks exclude media mutations; future media-mutating tasks fail closed."
+    },
+    {
+      "name": "sessions",
+      "state_class": "authoritative",
+      "strategy": "request_routed_file_session_directory",
+      "status": "implemented",
+      "reset": "restore baseline authenticated sessions",
+      "fork": "reflink checkpoint session directory"
+    },
+    {
+      "name": "redis_cache",
+      "state_class": "derived",
+      "strategy": "generation_namespaced_magento_cache_prefix",
+      "status": "implemented",
+      "reset": "activate a fresh generation prefix",
+      "fork": "activate a fresh target-branch prefix"
+    },
+    {
+      "name": "queue",
+      "state_class": "authoritative",
+      "strategy": "mysql_backed_queue_with_shared_cron_disabled_and_lifecycle_drain",
+      "status": "implemented",
+      "reset": "restore queue tables with MySQL branch",
+      "fork": "fork queue tables with MySQL checkpoint"
+    },
+    {
+      "name": "opensearch",
+      "state_class": "derived",
+      "strategy": "per_branch_index_prefix_and_rebuild",
+      "status": "implemented",
+      "reset": "delete target prefix and rebuild catalogsearch_fulltext",
+      "fork": "rebuild target prefix from the forked MySQL branch"
+    },
+    {
+      "name": "mail",
+      "state_class": "authoritative",
+      "strategy": "not_routed_in_current_webarena_mailcatcher",
+      "status": "unsupported",
+      "reset": "not available",
+      "fork": "not available",
+      "notes": "No reviewed Shopping Admin template mutates mail."
+    }
+  ]
+}
